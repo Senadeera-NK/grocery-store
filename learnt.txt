@@ -1,0 +1,1 @@
+ctrl + shift + r --> to refresh the PHP web page
