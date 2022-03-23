@@ -5,32 +5,34 @@
 // echo "<hr>Success I can see the PHP page !!!";
 echo "<link rel=stylesheet type=text/css href='index.css'>";
 echo "<body>";
-include('header.html');
+include('header.html');?>
 
-echo "<form>";
-echo "<select name='grocery-sections' id='grocery-sections'>";
-echo "<option value='all'>All</option>";
-echo "<option value='produce'>The produce department</option>";
-echo "<option value='meat'>The meat department</option>";
-echo "<option value='seafood'>The seafood department</option>";
-echo "<option value='beer&wine'>The beer & wine section</option>";
-echo "<option value='health&beauty'>The health & beauty department</option>";
-echo "<option value='preparedFood'>The deli/prepared foods department</option>";
-echo "<option value='frontEnd'>The front end</option>";
-echo "</select>";
-echo "<input type='text' placeholder='search...'>";
-echo "<button type='submit'>search</button>";
-echo "</form>";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <form action="get">
+    <select name="store-sections" id="store-sections">
+      <option class = "store-section-option" value="all">All</option>
+      <option class = "store-section-option" value="Beer&Wine">The Beer & Wine Department</option>
+      <option class = "store-section-option" value="produce">The Produce Department</option>
+      <option class = "store-section-option" value="meat">The Meat Department</option>
+      <option class = "store-section-option" value="seafood">The Seafood Department</option>
+      <option class = "store-section-option" value="healthy&beauty">The Health & Beauty Department</option>
+      <option class = "store-section-option" value="prepared">The Deli/Prepared Food Department</option>
+      <option class = "store-section-option" value="front-end">The Front End</option>
+    </select>
+    <input type="search" name="search" id="search" placeholder="Search...">
+    <button type="submit">search</button>
+  </form>
+</body>
+</html>
 
-echo "<div class='row-1'>";
-echo "<h2 class='row-title'>recently added</h2>";
-echo "</div>";
-echo "<div class='row-2'>";
-echo "<h2 class='row-title'>the meat departmant</h2>";
-echo "</div>";
-echo "<div class='row-3'>";
-echo "<h2 class='row-title'>you shopped</h2>";
-echo "</div>";
+<?php
 include('footer.html');
-echo "</body>";
 ?>
