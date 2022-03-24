@@ -25,7 +25,6 @@ include('header.html');?>
       <option class = "store-section-option" value="seafood">The Seafood Department</option>
       <option class = "store-section-option" value="healthy&beauty">The Health & Beauty Department</option>
       <option class = "store-section-option" value="prepared">The Deli/Prepared Food Department</option>
-      <option class = "store-section-option" value="front-end">The Front End</option>
     </select>
     <input type="search" name="search" id="search" placeholder="Search...">
     <button type="submit">search</button>
@@ -33,6 +32,22 @@ include('header.html');?>
 </body>
 </html>
 
+<?php 
+  echo "<h3 class='home-topics'>recently added</h3>";
+  echo "<div class='side-gallery'>";
+  echo "<div class='gallery-item'>";
+  echo "<img src = 'images/potato.jpg'>";
+  echo "<div class = 'hidden-item-info'>";
+  echo "<p>Potato</p>";
+  echo "<p>1kg -> Rs.200.00</p>";
+  echo "</div>";
+  echo "</div>";
+  echo "</div>";
+  echo "<hr>";
+  echo "<h3 class='home-topics'>you shopped</h3>";
+  echo "<hr>";
+  echo "<h3 class='home-topics'>the produce department</h3>";
+?>
 <?php
 include('footer.html');
 ?>
