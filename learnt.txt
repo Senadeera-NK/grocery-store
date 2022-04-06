@@ -1,1 +1,4 @@
 ctrl + shift + r --> to refresh the PHP web page
+shortcut added to the both D and C
+ctrl + k + c -->> making comment on vs studio
+ctrl + k + u -->> uncommenting on vs studio

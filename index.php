@@ -34,14 +34,16 @@ include('header.html');?>
 
 <?php 
   echo "<h3 class='home-topics'>recently added</h3>";
-  echo "<div class='side-gallery'>";
-  echo "<div class='gallery-item'>";
-  echo "<img src = 'images/potato.jpg'>";
-  echo "<div class = 'hidden-item-info'>";
-  echo "<p>Potato</p>";
-  echo "<p>1kg -> Rs.200.00</p>";
-  echo "</div>";
-  echo "</div>";
+  echo "<div class='slide-gallery'>";
+    echo "<div class='gallery-item'>";
+      echo "<div class='gallery-image'>";
+        echo "<img src = 'images/potato.jpg'>";
+      echo "</div>";
+      echo "<div class = 'hidden-item-info'>";
+        echo "<p>Potato</p>";
+        echo "<p>1kg -> Rs.200.00</p>";
+      echo "</div>";
+    echo "</div>";
   echo "</div>";
   echo "<hr>";
   echo "<h3 class='home-topics'>you shopped</h3>";
