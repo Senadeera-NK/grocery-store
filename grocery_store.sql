@@ -122,42 +122,51 @@ VALUES ('wine','red wine','images/the_winebeer_department/wine/red wine.jpg','1 
  ('beer','carlberg','images/the_winebeer_department/beer/carlsberg.jpg','6 packs','$10.49');
 
 
--- continue...
-INSERT INTO the_seafood_department
-VALUES ('shrimps','shrimps','images/the_seafood_department/shrimps.jpg'),
- ('atlantic salmon','atlantic salmon','images/the_seafood_department/atlantic salmon.jpg'),
- ('pacific salmon','pacific salmon','images/the_seafood_department/pacific salmon.jpg'),
- ('catfish','catfish','images/the_seafood_department/catfish.jpg'),
- ('tuna','tuna','images/the_seafood_department/tuna.jpg'),
- ('trout','trout','images/the_seafood_department/trout.jpg'),
- ('flounder','flounder','images/the_seafood_department/flounder.jpg'),
- ('cod','cod','images/the_seafood_department/cod.jpg'),
- ('haddock','haddock','images/the_seafood_department/haddock.jpg');
+-- deleting duplicated values from the_produce_department table --
+DELETE
+FROM the_produce_department
+WHERE produce_id NOT IN
+(
+SELECT MAX(produce_id)
+FROM the_produce_department
+GROUP BY produce_type, produce_name, produce_path, produce_size, produce_price)
 
-INSERT INTO the_health_beauty_department
-VALUES ('toothpaste','crest 3d white','images/the_health_beauty_department/toothpaste/crest 3d white.jpg'),
- ('toothpaste''colgate','images/the_health_beauty_department/toothpaste/colgate.jpg'),
- ('toothpaste','crest pro health','images/the_health_beauty_department/toothpaste/crest pro health.jpg'),
- ('sunscreen','himalaya herbals protective sunscreen Lotion','images/the_health_beauty_department/sunscreen/himalaya herbals protective sunscreen Lotion.jpg'),
- ('sunscreen','the derma co hyaluronic sunscreen','images/the_health_beauty_department/sunscreen/the derma co hyaluronic sunscreen.jpg'),
- ('sunscreen','la roche posay anthelios sunscreen','images/the_health_beauty_department/sunscreen/la roche posay anthelios sunscreen.jpg'),
- ('bathing products','kai bathing bubbles','images/the_health_beauty_department/bathing products/kai bathing bubbles.jpg'),
- ('bathing products','deep relax bath & shower oil','images/the_health_beauty_department/bathing products/deep relax bath & shower oil.jpg'),
- ('bathing products','herbivore botanicals calm bath salts','images/the_health_beauty_department/bathing products/herbivore botanicals calm bath salts.jpg'),
- ('shaving products','barbasol','images/health_beauty_department/shaving products/barbasol.jpg'),
- ('shaving products','private label','images/health_beauty_department/shaving products/private label.jpg'),
- ('shaving products','gillette','images/health_beauty_department/shaving products/gillette.jpg');
 
-INSERT INTO the_prepaired_department
-VALUES ('breakfast','sandwiches','images/the_prepaired_department/breakfast/sandwiches.jpg'),
- ('breakfast','salads','images/the_prepaired_department/breakfast/salads.jpg'),
- ('breakfast','cut fruits','images/the_prepaired_department/breakfast/cut fruits.jpg'),
- ('lunch','pizza','images/the_prepaired_department/lunch/pizzas.jpg'),
- ('lunch','vegetable trays','images/the_prepaired_department/lunch/vegetable trays.jpg'),
- ('fast foods','hotdogs','images/the_prepaired_department/fast foods/hotdogs.jpg'),
- ('fast foods','nachos','images/the_prepaired_department/fastfoods/nachos.jpg'),
- ('fast foods','popcorn','images/the_prepaired_department/fast foods/popcorn.jpg'),
- ('drinks','hot chocolate','images/the_prepaired_department/drinks/hotchocolate.jpg'),
- ('drinks','coffee','images/the_prepaired_department/drinks/coffee.jpg');
+INSERT INTO the_seafood_department(seafood_type, seafood_name, seafood_path,seafood_size, seafood_price)
+VALUES ('shellfish','shrimps','images/the_seafood_department/shellfish/shrimps.jpg','1 kg','$14.78'),
+ ('fish','atlantic salmon','images/the_seafood_department/fish/atlantic salmon.jpg','1 kg','$10.00'),
+ ('fish','pacific salmon','images/the_seafood_department/fish/pacific salmon.jpg','1 kg','$5.16'),
+ ('fish','catfish','images/the_seafood_department/fish/catfish.jpg','1 kg','$4.37'),
+ ('fish','tuna','images/the_seafood_department/fish/tuna.jpg','1 kg','$5.02'),
+ ('fish','trout','images/the_seafood_department/fish/trout.jpg','1 kg','$2.92'),
+ ('fish','flounder','images/the_seafood_department/fish/flounder.jpg','1 kg','$5.00'),
+ ('fish','cod','images/the_seafood_department/fish/cod.jpg','1 kg','$3.32'),
+ ('fish','haddock','images/the_seafood_department/fish/haddock.jpg','1 kg','$30.32');
+
+INSERT INTO the_health_beauty_department(healthbeauty_type, healthbeauty_name, health_beauty_path, health_beauty_size, health_beauty_price)
+VALUES ('toothpaste','crest 3d white','images/the_health_beauty_department/toothpaste/crest 3d white.jpg','1 pack','$11.44'),
+ ('toothpaste','colgate','images/the_health_beauty_department/toothpaste/colgate.jpg','6 ounce','$7.92'),
+ ('toothpaste','crest pro health','images/the_health_beauty_department/toothpaste/crest pro health.jpg','3 ounce','$17.77'),
+ ('sunscreen','himalaya herbals protective sunscreen lotion','images/the_health_beauty_department/sunscreen/himalaya herbals protective sunscreen Lotion.jpg','100 ml','$12.99'),
+ ('sunscreen','the derma co hyaluronic sunscreen','images/the_health_beauty_department/sunscreen/the derma co hyaluronic sunscreen.jpg','50 g','$12.99'),
+ ('sunscreen','la roche posay anthelios sunscreen','images/the_health_beauty_department/sunscreen/la roche posay anthelios sunscreen.jpg','4.7 ml','$7.74'),
+ ('bathing products','kai bathing bubbles','images/the_health_beauty_department/bathing products/kai bathing bubbles.jpg','12 ounces','$29.00'),
+ ('bathing products','deep relax bath & shower oil','images/the_health_beauty_department/bathing products/deep relax bath & shower oil.jpg','55 ml','$585.00'),
+ ('bathing products','herbivore botanicals calm bath salts','images/the_health_beauty_department/bathing products/herbivore botanicals calm bath salts.jpg','8 ounces','$20.00'),
+ ('shaving products','barbasol','images/health_beauty_department/shaving products/barbasol.jpg','10 ounces','$9.98'),
+ ('shaving products','private label','images/health_beauty_department/shaving products/private label.jpg','10 ounces','$9.98'),
+ ('shaving products','gillette razor blades','images/health_beauty_department/shaving products/gillette.jpg','5 pieces','$38.98');
+
+INSERT INTO the_prepaired_department(prepaired_type,prepaired_name,prepaired_path,prepaired_size,prepaired_price)
+VALUES ('breakfast','sandwiches','images/the_prepaired_department/breakfast/sandwiches.jpg','1 piece','$4.00'),
+ ('breakfast','salads','images/the_prepaired_department/breakfast/salads.jpg','i plate','$3.50'),
+ ('breakfast','cut fruits','images/the_prepaired_department/breakfast/cut fruits.jpg','1 plate','$25.00'),
+ ('lunch','pizza','images/the_prepaired_department/lunch/1 large.jpg','1 large pizza','$5.99'),
+ ('lunch','vegetable trays','images/the_prepaired_department/lunch/vegetable trays.jpg','1 tray','$13.82'),
+ ('fast foods','hotdogs','images/the_prepaired_department/fast foods/hotdogs.jpg','10 ounces','$5.52'),
+ ('fast foods','nachos','images/the_prepaired_department/fastfoods/nachos.jpg','2.75 ounces','$1.98'),
+ ('fast foods','popcorn','images/the_prepaired_department/fast foods/popcorn.jpg','3.29 ounces','$5.98'),
+ ('drinks','hot chocolate','images/the_prepaired_department/drinks/hotchocolate.jpg','grande','$3.25'),
+ ('drinks','coffee','images/the_prepaired_department/drinks/coffee.jpg','tall','$2.25');
 
 
