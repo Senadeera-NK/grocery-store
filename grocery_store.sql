@@ -169,7 +169,14 @@ VALUES ('breakfast','sandwiches','images/the_prepaired_department/breakfast/sand
  ('drinks','hot chocolate','images/the_prepaired_department/drinks/hotchocolate.jpg','grande','$3.25'),
  ('drinks','coffee','images/the_prepaired_department/drinks/coffee.jpg','tall','$2.25');
 
- INSERT INTO the_health_beauty_department ()
- VALUES ('njdskjn','oninonoi','');
+
+-- updating the mistaken papayas produce_type to fruits, and produce_path to also fruits path
+UPDATE the_produce_department
+SET produce_type = 'fruits',
+produce_path = 'images/the_produce_department/fruits/papayas.jpg'
+WHERE produce_name = 'papayas';
 
 
+-- inserting broccoli vegetables instead of the papaya fruit
+INSERT INTO the_produce_department(produce_type, produce_name, produce_path, produce_size, produce_price)
+VALUES('vegetables','broccoli','images/the_produce_department/vegetables/boroccoli.jpg','1 kg','$75.00');
