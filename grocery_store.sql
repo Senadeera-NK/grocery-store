@@ -170,6 +170,6 @@ VALUES ('breakfast','sandwiches','images/the_prepaired_department/breakfast/sand
  ('drinks','coffee','images/the_prepaired_department/drinks/coffee.jpg','tall','$2.25');
 
  INSERT INTO the_health_beauty_department ()
- VALUES ('njdskjn');
+ VALUES ('njdskjn','oninonoi','');
 
 
