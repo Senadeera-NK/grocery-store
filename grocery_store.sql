@@ -180,3 +180,15 @@ WHERE produce_name = 'papayas';
 -- inserting broccoli vegetables instead of the papaya fruit
 INSERT INTO the_produce_department(produce_type, produce_name, produce_path, produce_size, produce_price)
 VALUES('vegetables','broccoli','images/the_produce_department/vegetables/boroccoli.jpg','1 kg','$75.00');
+
+-- renaming the prepaired_department name to prepared_department
+ALTER TABLE the_prepaired_department RENAME TO the_prepared_department;
+
+-- renaming all column's of the renamed the_prepared_department
+ALTER TABLE the_prepared_department CHANGE prepaired_id prepared_id int not null,
+CHANGE prepaired_name prepared_name char(40) not null,
+CHANGE prepaired_type prepared_type char(40) not null,
+CHANGE prepaired_size prepared_size char(20),
+CHANGE prepaired_price prepared_price char(20) not null,
+CHANGE prepaired_path prepared_path char(200) not null;
+
