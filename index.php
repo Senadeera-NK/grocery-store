@@ -50,23 +50,41 @@ include('header.html');?>
 
   $sql_wine_beer = "select winebeer_id, winebeer_type, winebeer_name, wine_beer_size, wine_beer_price, wine_beer_path from the_wine_beer_department";
 
-  $sql_health_beauty = "select healthbeauty_id, healtbeauty_type, healthbeauty_name, health_beauty_size, health_beauty_price, health_beauty_path from the_health_beauty_department";
+  $sql_health_beauty = "select healthbeauty_id, healthbeauty_type, healthbeauty_name, health_beauty_size, health_beauty_price, health_beauty_path from the_health_beauty_department";
 
   //executing those created sql statements and checking the db connection,if it's not connected succesfully it'll show an error message
+  $exeSQL_produce = mysqli_query($connection, $sql_produce) or die(mysqli_error($connection));
+
+  $exeSQL_meat = mysqli_query($connection, $sql_meat) or die(mysqli_error($connection));
+
+  $exeSQL_seafood = mysqli_query($connection, $sql_seafood) or die(mysqli_error($connection));
+
+  $exeSQL_prepared = mysqli_query($connection, $sql_prepared) or die(mysqli_error($connection));
+
+  $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
+
+  $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
+
+  //trying to get all executed items to arrays
   
+  $array_meat = mysqli_fetch_array($exeSQL_meat);
+  $array_seafood = mysqli_fetch_array($exeSQL_seafood);
+  $array_prepared = mysqli_fetch_array($exeSQL_prepared);
+  $array_wine_beer = mysqli_fetch_array($exeSQL_wine_beer);
+  $array_health_beauty = mysqli_fetch_array($exeSQL_health_beauty);
 
   echo "<h3 class='home-topics'>recently added</h3>";
+
+  while ($array_produce = mysqli_fetch_array($exeSQL_produce))
+  {
   echo "<div class='slide-gallery'>";
     echo "<div class='gallery-item'>";
-      echo "<div class='gallery-image'>";
-        echo "<img src = 'images/potato.jpg'>";
-      echo "</div>";
-      echo "<div class = 'hidden-item-info'>";
-        echo "<p>Potato</p>";
-        echo "<p>1kg -> Rs.200.00</p>";
-      echo "</div>";
+        echo "<img src =".$array_produce['produce_path'].">";
+        echo "<p>".$array_produce['produce_name']."</p>";
+        echo "<p>".$array_produce['produce_size']." -> ".$array_produce['produce_price']."</p>";
     echo "</div>";
   echo "</div>";
+  }
   echo "<hr>";
   echo "<h3 class='home-topics'>you shopped</h3>";
   echo "<hr>";
