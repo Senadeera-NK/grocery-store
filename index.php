@@ -7,9 +7,12 @@
 session_start();
 //including db.php file to connect to db
 include ("db.php");
-
+//adding the js and css files
 echo "<link rel=stylesheet type=text/css href='index.css'>";
+echo "<script type = 'text/javascrcipt' src = 'index.js'></script>";
 echo "<body>";
+
+//including 'header' file to the page
 include('header.html');?>
 
 <!DOCTYPE html>
@@ -75,16 +78,26 @@ include('header.html');?>
 
   echo "<h3 class='home-topics'>recently added</h3>";
 
+  echo "<div class = 'gallery-wrapper'>";
+  echo "<div class='gallery'>";
   while ($array_produce = mysqli_fetch_array($exeSQL_produce))
   {
-  echo "<div class='slide-gallery'>";
     echo "<div class='gallery-item'>";
         echo "<img src =".$array_produce['produce_path'].">";
         echo "<p>".$array_produce['produce_name']."</p>";
         echo "<p>".$array_produce['produce_size']." -> ".$array_produce['produce_price']."</p>";
     echo "</div>";
-  echo "</div>";
   }
+  echo "</div>";
+
+  // creating a class for arrow buttons of horizontal
+  echo "<div class = 'paddles'>";
+  echo "<button class = 'left-paddle paddle hidden'> < </button>";
+  echo "<button class = 'right-paddle paddle hidden'> > </button>";
+  echo "</div>";
+  
+  echo "</div>";
+
   echo "<hr>";
   echo "<h3 class='home-topics'>you shopped</h3>";
   echo "<hr>";

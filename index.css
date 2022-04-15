@@ -69,23 +69,55 @@ form button{
   margin-top:1.5rem;
 }
 /* ------slide gallery styling------ */
-.slide-gallery{
-  border: 1px solid red;
-  margin-top:1rem;
-  margin-bottom:2rem;
-  width: 100%;
+.gallery-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+.gallery {
+  border: 1px solid red;
+  /* overflow-x: scroll;  */
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* to remove white space in between elements */
+  white-space: nowrap;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-left:4.5rem;
+  width:90%;
+  -webkit-overflow-scrolling: touch;
+}
+
 .gallery-item {
   border: 1px solid black;
-  width: 18rem;
+  /*to prevent the line after the element */
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20rem;
   height: 20rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .gallery-item img{
-  width: 18rem;
+  border: 1px solid blue;
+  width: 20rem;
   height: 15rem;
-  border: 1px solid black;
+}
+.paddles{
+}
+.paddle {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:3em;
+}
+.left-paddle {
+  left:0;
+}
+.right-paddle {
+  right:0;
+}
+.hidden {
+  display:none;
 }
 
 /* .gallery-image {

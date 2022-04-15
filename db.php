@@ -14,11 +14,4 @@ if (!$connection)
   die ('Could not connect: '.mysqli_connect_error($connection));
 }
 
-//else if db connection successfull...
-else
-{
-  //output success message
-  echo "successfully connected !";
-}
-
 ?>

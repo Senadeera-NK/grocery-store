@@ -192,3 +192,8 @@ CHANGE prepaired_size prepared_size char(20),
 CHANGE prepaired_price prepared_price char(20) not null,
 CHANGE prepaired_path prepared_path char(200) not null;
 
+-- deleting and adding 'broccoli' again since it doesn't show up in php
+DELETE FROM the_produce_department WHERE produce_name = 'broccoli';
+INSERT INTO the_produce_department (produce_type, produce_name, produce_path, produce_size, produce_price)
+VALUES('broccoli','vegetables','images/the_produce_department/vegetables/broccoli.jpg', '1 kg', '$10.34');
+
