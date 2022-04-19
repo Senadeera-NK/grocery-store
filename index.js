@@ -1,4 +1,67 @@
+// ------------ the js for three horizontal sliders in index.php ------------ //
+//getting the right buttons ID to a variable in first gallery
+var rightbtn1 = document.getElementById('right1');
+rightbtn1.onclick = function () {
+  var container = document.getElementById('gallery1');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+  };
 
-alert('mashallah................!!!');
+//getting the left button's ID to a variable in fisrt gallery  
+var leftbtn1 = document.getElementById('left1');
+leftbtn1.onclick = function () {
+  var container = document.getElementById('gallery1');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
+
+//getting the right button's ID to a varaible in second gallery
+var rightbtn2 = document.getElementById('right2');
+rightbtn2.onclick = function () {
+  var container = document.getElementById('gallery2');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+
+//getting the left button's ID to a variable in second gallery
+var leftbtn2 = document.getElementById('left2');
+leftbtn2.onclick = function () {
+  var container = document.getElementById('gallery2');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
+
+//getting the right button's ID to a variable in third gallery
+var rightbtn3 = document.getElementById('right3');
+rightbtn3.onclick = function () {
+  var container = document.getElementById('gallery3');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+
+//getting the left button's ID to a variable in third gallery
+var leftbtn3 = document.getElementById('left3');
+leftbtn3.onclick = function () {
+  var container = document.getElementById('gallery3');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
+
+//the main function to slide the gallery to left or right
+function sideScroll(element, direction, speed, distance, step){
+  scrollAmount = 0;
+  var slideTimer = setInterval(function(){
+    if (direction == 'left'){
+      element.scrollLeft -= step;
+    }
+    else {
+      element.scrollLeft += step;
+    }
+    scrollAmount += step;
+    if(scrollAmount >= distance){
+      window.clearInterval(slideTimer);
+    }
+  }, speed);
+}
 
 

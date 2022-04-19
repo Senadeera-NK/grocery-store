@@ -8,10 +8,6 @@ session_start();
 //including db.php file to connect to db
 include ("db.php");
 
-//adding jquery to the file
-echo "<script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>";
-//adding the js and css files
-// echo "<link rel=stylesheet type=text/css href='index.css'>";
 echo "<script type='text/javascrcipt' src='index.js'></script>";
 echo "<body>";
 
@@ -24,8 +20,8 @@ include('header.html');?>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- adding the src file -->
   <link rel="stylesheet" href="index.css">
-  <script type="text/javascrcipt" src="index.js"></script>
 </head>
 <body>
   <form action="get">
@@ -73,8 +69,7 @@ include('header.html');?>
   $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
 
   //trying to get all executed items to arrays
-  
-  $array_meat = mysqli_fetch_array($exeSQL_meat);
+  // $array_meat = mysqli_fetch_array($exeSQL_meat);
   $array_seafood = mysqli_fetch_array($exeSQL_seafood);
   $array_prepared = mysqli_fetch_array($exeSQL_prepared);
   $array_wine_beer = mysqli_fetch_array($exeSQL_wine_beer);
@@ -83,8 +78,9 @@ include('header.html');?>
   echo "<h3 class='home-topics'>recently added</h3>";
 
   echo "<div class = 'gallery-wrapper'>";
-  echo "<img src='images/arrow.jpg' class='left' id='left' alt='left'>";
-  echo "<div class='gallery' id = 'gallery'>";
+  echo "<img src='images/arrow.jpg' class='left' id = 'left1' alt='left'>";
+  echo "<div class='gallery' id = 'gallery1'>";
+  // getting all the items from mentioned sql
   while ($array_produce = mysqli_fetch_array($exeSQL_produce))
   {
     echo "<div class='gallery-item'>";
@@ -94,44 +90,52 @@ include('header.html');?>
      echo "</div>";
   }
   echo "</div>";
-
-  echo "<img src='images/arrow.jpg' class='right' id='right' alt='right'>";
+  // right side arrow of the slider
+  echo "<img src='images/arrow.jpg' class='right' id='right1' alt='right'>";
   echo "</div>";
+
   echo "<hr>";
+//------2nd slider begins------------
   echo "<h3 class='home-topics'>you shopped</h3>";
+  echo "<div class = 'gallery-wrapper'>";
+  echo "<img src='images/arrow.jpg' class='left' id='left2' alt='left'>";
+  echo "<div class='gallery' id = 'gallery2'>";
+  // getting all the items from mentioned sql
+  while ($array_seafood = mysqli_fetch_array($exeSQL_seafood))
+  {
+    echo "<div class='gallery-item'>";
+         echo "<img src =".$array_seafood['seafood_path'].">";
+         echo "<p>".$array_seafood['seafood_name']."</p>";
+         echo "<p>".$array_seafood['seafood_size']." "." = "." ".$array_seafood['seafood_price']."</p>";
+     echo "</div>";
+  }
+  echo "</div>";
+  // right side arrow of the slider
+  echo "<img src='images/arrow.jpg' class='right' id ='right2' alt='right'>";
+  echo "</div>";
+
   echo "<hr>";
+  // ------- 3rd slider ends-----------
   echo "<h3 class='home-topics'>the produce department</h3>";
+  echo "<div class = 'gallery-wrapper'>";
+  echo "<img src='images/arrow.jpg' class='left' id='left3' alt='left'>";
+  echo "<div class='gallery' id = 'gallery3'>";
+  // getting all the items from mentioned sql
+  while ($array_prepared = mysqli_fetch_array($exeSQL_prepared))
+  {
+    echo "<div class='gallery-item'>";
+         echo "<img src =".$array_prepared['prepared_path'].">";
+         echo "<p>".$array_prepared['prepared_name']."</p>";
+         echo "<p>".$array_prepared['prepared_size']." "." = "." ".$array_prepared['prepared_price']."</p>";
+     echo "</div>";
+  }
+  echo "</div>";
+  // right side arrow of the slider
+  echo "<img src='images/arrow.jpg' class='right' id ='right3' alt='right'>";
+  echo "</div>";
 ?>
-
-<script type="text/JavaScript">
-  var button = document.getElementById('right');
-    button.onclick = function () {
-      var container = document.getElementById('gallery');
-      sideScroll(container, 'right', 25, 300, 10);
-    };
-
-    var back = document.getElementById('left');
-    back.onclick = function () {
-      var container = document.getElementById('gallery');
-      sideScroll(container, 'left', 25, 300, 10);
-    };
-
-    function sideScroll(element, direction, speed, distance, step){
-      scrollAmount = 0;
-      var slideTimer = setInterval(function(){
-        if (direction == 'left'){
-          element.scrollLeft -= step;
-        }
-        else {
-          element.scrollLeft += step;
-        }
-        scrollAmount += step;
-        if(scrollAmount >= distance){
-          window.clearInterval(slideTimer);
-        }
-      }, speed);
-    }
-</script>
+<!-- adding the js file for three horizontal sliders -->
+<script type="text/javascript" src = "index.js"></script>
 <?php
 include('footer.html');
 ?>
