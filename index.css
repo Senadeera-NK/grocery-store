@@ -73,18 +73,24 @@ form button{
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 .gallery {
-  border: 1px solid red;
-  /* overflow-x: scroll;  */
+  /* to align gallery, left and right button in one line */
+  display: inline-block;
   overflow-x: auto;
   overflow-y: hidden;
+  
   /* to remove white space in between elements */
   white-space: nowrap;
   margin-bottom: 3rem;
   margin-top: 1rem;
-  margin-left:4.5rem;
+  margin-left:3.5rem;
   width:90%;
-  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+}
+.gallery::-webkit-scrollbar{
+  height:0;
+  width: 0;
 }
 
 .gallery-item {
@@ -98,26 +104,28 @@ form button{
   margin-right: 1.5rem;
 }
 .gallery-item img{
-  border: 1px solid blue;
-  width: 20rem;
+  width: 19rem;
   height: 15rem;
 }
-.paddles{
+#arrow-sign {
+  width: 1.5rem;
+  height: 1.5rem;
+
 }
-.paddle {
+.left, .right {
   position:absolute;
-  top:0;
-  bottom:0;
-  width:3em;
+  top: 45%;
+  height:10rem;
+  width: 2rem;
+  display: inline-block;
 }
-.left-paddle {
-  left:0;
+.left {
+  left:1.5rem;
 }
-.right-paddle {
-  right:0;
-}
-.hidden {
-  display:none;
+.right {
+  float:right;
+
+  transform: rotate(180deg);
 }
 
 /* .gallery-image {
