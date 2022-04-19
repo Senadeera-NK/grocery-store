@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #efefef;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle, #2196f3, #3f51b5);
+      font-family: 'Mulish', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main{
+      position: relative;
+      width:800px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .left, .right{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 50px;
+    }
+    .left {
+      top: 35%;
+      left: -25px;
+    }
+    .right {
+      right: -25px;
+      bottom: 35%;
+
+      transform: rotate(180deg);
+    }
+    .item-div{
+      overflow-x: auto;
+      display: flex;
+    }
+    .item-div::-webkit-scrollbar{
+      height:0;
+      width: 0;
+    }
+    .item {
+      min-width:200px;
+      max-width:200px;
+      margin-left: 15px;
+      height: 200px;
+      border-radius: 20px;
+      background: grey;
+    }
+    .item:first-child {
+      margin-left: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="item-div" id="box">
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+      <div class = "item"></div>
+    </div>
+    <img src="1.svg" class="left" id="left" alt="left">
+    <img src="1.svg" class="right" id="right" alt="right">
+  </div>
+  <script type="text/javascript">
+    var button = document.getElementById('right');
+    button.onclick = function () {
+      var container = document.getElementById('box');
+      sideScroll(container, 'right', 25, 100, 10);
+    };
+
+    var back = document.getElementById('left');
+    back.onclick = function () {
+      var container = document.getElementById('box');
+      sideScroll(container, 'left', 25, 100, 10);
+    };
+
+    function sideScroll(element, direction, speed, distance, step){
+      scrollAmount = 0;
+      var slideTimer = setInterval(function(){
+        if (direction == 'left'){
+          element.scrollLeft -= step;
+        }
+        else {
+          element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+          window.clearInterval(slideTimer);
+        }
+      }, speed);
+    }
+  </script>
+</body>
+</html>

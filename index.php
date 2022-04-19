@@ -7,6 +7,9 @@
 session_start();
 //including db.php file to connect to db
 include ("db.php");
+
+//adding jquery to the file
+echo "<script src='jquery-3.6.0.min.js'></script>";
 //adding the js and css files
 echo "<link rel=stylesheet type=text/css href='index.css'>";
 echo "<script type = 'text/javascrcipt' src = 'index.js'></script>";
@@ -91,11 +94,8 @@ include('header.html');?>
   echo "</div>";
 
   // creating a class for arrow buttons of horizontal
-  echo "<div class = 'paddles'>";
-  echo "<button class = 'left-paddle paddle hidden'> < </button>";
-  echo "<button class = 'right-paddle paddle hidden'> > </button>";
-  echo "</div>";
-  
+  echo "<img src='arrow.jpg' id='left' alt='left'>";
+  echo "<img src='arrow.jpg' id='left' alt='left'>";
   echo "</div>";
 
   echo "<hr>";
