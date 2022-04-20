@@ -105,19 +105,20 @@ include('header.html');?>
   echo "</div>";
 
   echo "<hr>";
-  // ---------- 3rd slider ends-----------//
+  // ---------- 3rd slider begins-----------//
   echo "<h3 class='home-topics'>the produce department</h3>";
   echo "<div class = 'gallery-wrapper'>";
   echo "<img src='images/arrow.jpg' class='left' id='left3' alt='left'>";
   echo "<div class='gallery' id = 'gallery3'>";
   // getting all the items from mentioned sql
   while ($array_meat = mysqli_fetch_array($exeSQL_meat))
-  {
+  { 
     echo "<div class='gallery-item' onclick='onClick(this)' >";
-         echo "<img src =".$array_meat['meat_path'].">";
-         echo "<p>".$array_meat['meat_name']."</p>";
-         echo "<p>".$array_meat['meat_size']." "." = "." ".$array_meat['meat_price']."</p>";
-     echo "</div>";
+    // $data = array($array_meat['meat_price'] ,$array_meat['meat_name']);
+         echo "<img class='gallery-item-img' src =".$array_meat['meat_path'].">";
+         echo "<p class='gallery-item-name'>".$array_meat['meat_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_meat['meat_size']." "." = "." ".$array_meat['meat_price']."</p>";
+    echo "</div>";
   }
   echo "</div>";
   // right side arrow of the slider
@@ -126,17 +127,28 @@ include('header.html');?>
 
   //The Modal 
 echo "<div id='modal' class='modal'>";
-
   //Modal content 
 echo "<div class='modal-content'>";
 echo    "<span class='close'>&times;</span>";
-echo    "<p>Some text in the Modal..</p>";
+echo    "<div class='modal-content-left' id = 'modal-content-left'>";
+echo      "<img src = ''>";
+echo    "</div>";
+echo    "<div class='modal-content-right' id = 'modal-content-right'>";
+echo    "<h2 id = 'item-name'></h2>";
+echo      "<div class = 'description' id = 'description'>";
+echo      "</div>";
+echo      "<div class= 'amount-price' id = 'amount-price'> </div>";
+echo      "<p> Amount <input type = 'text' id='amount' class='amount'/> <span id = 'measurement-type'></span> </p>";
+echo      "<button id = 'add-cart' class='add-cart'>Add Cart</button>";
+echo    "</div>";
 echo  "</div>";
-
+//<?php echo json_encode($data); 
 echo "</div>";
 ?>
 <!-- adding the js file for three horizontal sliders -->
-<script type="text/javascript" src = "index.js"></script>
+
+<!-- <script type="text/javascript">var jArray =      ;</script> -->
+<script type="text/JavaScript" src = "index.js"></script>
 
 <?php
 include('footer.html');

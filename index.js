@@ -71,9 +71,15 @@ var modal = document.getElementById('modal');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+//function to getting the element which is clicked by the user
 function onClick(element) {
+  //when user clicked making the modal visible
   modal.style.display = "block";
+
+  console.log(element.getElementsByClassName("gallery-item-img").innerText);
 }
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
