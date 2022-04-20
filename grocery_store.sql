@@ -107,8 +107,8 @@ VALUES ('red meat','Beef','images/the_meat_department/red_meat/beef.jpg','1 kg',
  ('red meat','Pork','images/the_meat_department/red_meat/pork.jpg','1 kg','$55.00'),
  ('red meat','Lamb','images/the_meat_department/red_meat/lamb.jpg''1 kg','$130.00'),
  ('red meat','Goat','images/the_meat_department/red_meat/goat.jpg''1 kg','$40.00'),
- ('white meat','Chicken','images/the_meat_department/red_meat/chicken.jpg','1 kg','$15.00'),
- ('white meat','Turkey','images/the_meat_department/red_meat/turkey.jpg','1 kg','$25.00');
+ ('white meat','Chicken','images/the_meat_department/white_meat/chicken.jpg','1 kg','$15.00'),
+ ('white meat','Turkey','images/the_meat_department/white_meat/turkey.jpg','1 kg','$25.00');
 
 INSERT INTO the_wine_beer_department(winebeer_type, winebeer_name, wine_beer_path, wine_beer_size, wine_beer_price)
 VALUES ('wine','Red Wine','images/the_winebeer_department/wine/red_wine.jpg','1 litre','$35.00'),
