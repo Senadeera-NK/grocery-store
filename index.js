@@ -76,8 +76,13 @@ var span = document.getElementsByClassName("close")[0];
 function onClick(element) {
   //when user clicked making the modal visible
   modal.style.display = "block";
+  document.getElementById("modal-img").src = "images/the_produce_department/fruits/apples.jpg";
+  document.getElementById("modal-item-name").innerText = "Apples";
+  document.getElementById("modal-description").innerText = "Apples are mostly grow in Foreign countries, such as USA, China and Canada. Our shops most apples have been distributed by Chinese main apple market. There are several noticeable varieties of apples, in our shop. You can use the 'live watch' to watch all the apples varieties currently available.";
+  document.getElementById('modal-amount-price').innerText = "1Kg = $34.00";
+  document.getElementById('modal-measurement-type').innerText = "Kg";
 
-  console.log(element.getElementsByClassName("gallery-item-img").innerText);
+  console.log(element.target.className);
 }
 
 // When the user clicks on <span> (x), close the modal

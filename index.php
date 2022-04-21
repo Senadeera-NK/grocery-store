@@ -111,9 +111,11 @@ include('header.html');?>
   echo "<img src='images/arrow.jpg' class='left' id='left3' alt='left'>";
   echo "<div class='gallery' id = 'gallery3'>";
   // getting all the items from mentioned sql
+  $sample = [];
   while ($array_meat = mysqli_fetch_array($exeSQL_meat))
   { 
-    echo "<div class='gallery-item' onclick='onClick(this)' >";
+    $sample = $array_meat['meat_name'];
+    echo "<div class='gallery-item' id='gallery-item' onclick='onClick(this, this.class)' >";
     // $data = array($array_meat['meat_price'] ,$array_meat['meat_name']);
          echo "<img class='gallery-item-img' src =".$array_meat['meat_path'].">";
          echo "<p class='gallery-item-name'>".$array_meat['meat_name']."</p>";
@@ -131,15 +133,17 @@ echo "<div id='modal' class='modal'>";
 echo "<div class='modal-content'>";
 echo    "<span class='close'>&times;</span>";
 echo    "<div class='modal-content-left' id = 'modal-content-left'>";
-echo      "<img src = ''>";
+echo      "<img id='modal-img' src = ''>";
 echo    "</div>";
 echo    "<div class='modal-content-right' id = 'modal-content-right'>";
-echo    "<h2 id = 'item-name'></h2>";
-echo      "<div class = 'description' id = 'description'>";
+echo    "<h2 id = 'modal-item-name'></h2>";
+echo      "<div class = 'modal-description' id = 'modal-description'>";
 echo      "</div>";
-echo      "<div class= 'amount-price' id = 'amount-price'> </div>";
-echo      "<p> Amount <input type = 'text' id='amount' class='amount'/> <span id = 'measurement-type'></span> </p>";
-echo      "<button id = 'add-cart' class='add-cart'>Add Cart</button>";
+echo      "<div class= 'modal-amount-price' id = 'modal-amount-price'> </div>";
+echo      "<div class='modal-amount-measurement'>";
+echo        "<p> Amount <input type = 'number' id='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
+echo      "</div>";
+echo      "<button id = 'add-cart-btn' class='add-cart-btn'>Add Cart</button>";
 echo    "</div>";
 echo  "</div>";
 //<?php echo json_encode($data); 
@@ -147,7 +151,7 @@ echo "</div>";
 ?>
 <!-- adding the js file for three horizontal sliders -->
 
-<!-- <script type="text/javascript">var jArray =      ;</script> -->
+<script type="text/javascript">var sample = <?php echo json_encode($sample);?>;</script> 
 <script type="text/JavaScript" src = "index.js"></script>
 
 <?php
