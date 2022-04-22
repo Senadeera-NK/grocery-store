@@ -3,3 +3,4 @@ shortcut added to the both D and C
 ctrl + k + c -->> making comment on vs studio
 ctrl + k + u -->> uncommenting on vs studio
 shift + tab -->> to make a tab space in left
+\"$comment\" to pass string variables from PHP to javascript function arguments

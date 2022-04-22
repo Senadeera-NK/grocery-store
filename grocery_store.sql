@@ -197,3 +197,96 @@ DELETE FROM the_produce_department WHERE produce_name = 'broccoli';
 INSERT INTO the_produce_department (produce_type, produce_name, produce_path, produce_size, produce_price)
 VALUES('broccoli','vegetables','images/the_produce_department/vegetables/broccoli.jpg', '1 kg', '$10.34');
 
+-- adding the description column and measurement column to tables
+ALTER TABLE the_meat_department
+ADD  meat_desc LONGTEXT not null,
+ADD meat_measurement char(255) not null;
+
+ALTER TABLE the_seafood_department
+ADD  seafood_desc LONGTEXT not null,
+ADD seafood_measurement char(255) not null;
+
+ALTER TABLE the_wine_beer_department
+ADD  wine_beer_desc LONGTEXT not null,
+ADD wine_beer_measurement char(255) not null;
+
+ALTER TABLE the_health_beauty_department
+ADD  health_beauty_desc LONGTEXT not null,
+ADD health_beauty_measurement char(255) not null;
+
+ALTER TABLE the_produce_department
+ADD  produce_desc LONGTEXT not null,
+ADD meat_measurement char(255) not null;
+
+ALTER TABLE the_prepared_department
+ADD  prepared_desc LONGTEXT not null,
+ADD prepared_measurement char(255) not null;
+
+-- updating those column's values in each table
+UPDATE the_meat_department
+SET meat_measurement = 'Kg';
+
+UPDATE the_meat_department
+SET meat_desc = "Chicken is the food that we include in any day, every day meal without any remorse. There are different type of chickens in our store. Make sure to watch our live stream of the chicken meat from our website, and decide what chicken you are most comfortable with.Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Chicken';
+
+UPDATE the_meat_department
+SET meat_desc = "Turkey is one of the most popular meat variety not only on out grocery but also world wide. There are different main companies that distribute best kind of turkeys. And our shop always make sure to get our turkeys from those companies. You can buy the turkey that you want from those popular companies through our store. Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Turkey';
+
+UPDATE the_meat_department
+SET meat_desc = "Lamb is one of rare expensive and hard to decide whether that meat is good or bad meat type. In our store you can get the cheapest but rich in quality lambs that you can find easily. Without a doubt we make sure to give you the best product, we can guaranty you that. Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Lamb';
+
+UPDATE the_meat_department
+SET meat_desc = "Pork is one of the finest meat. You can check upon the available pork in our store through this web and decide on your own which you should buy. Feel free to our meat manager if you dont know how to or what to choose .Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Pork';
+
+UPDATE the_meat_department
+SET meat_desc = "Beef is our best distributed product from 2019 to this year and we make sure to hold this name for the next years to with our kind customers support undoublty. SO feel free to contact about the beef you want and give us your suggestions too. Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Beef';
+
+UPDATE the_meat_department
+SET meat_desc = "Goat meat type is one of the best meats that has been reviewed as best by our customers. There are different type which haas been distributed by different companies. Feel free to contact us and order your chosen company goat meat from our grocery. We will make sure to give you the best discount after all. Contact our meat department manager - 0775654324 for more info"
+WHERE meat_name = 'Goat';
+
+
+UPDATE the_seafood_department
+SET seafood_measurement = 'Kg';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Shrimps are one of the best selling fish item which is categorizing under shellfish. We buying shrimps from one of the best seafood ports that can be found in our country. So feel free to contact us and buy some for your own. After watching our live stream of the avaiable shrimps and judge the quality of it by your own. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Shrimps';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Atlantic Salmon is one of the best known Salmon in this country, And our shop has been wining an amazing name for the quality of our salmons through out years. You can choose the amount you need and buy these. Feel free to contact the following person if needed any help through out the proccess. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Atlantic Salmon';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Pacific Salmon known for one of the best after the Atlantic Salmon. It is waste of time to mention the quality of these salmon cause of the famousness of our grocery about salmon seafood. So feel free to contact us about any information and the fishes. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Pacific Salmon';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Catfish are one of the best selling fishes in our shop. There are different variety typs of these amazing fishes. Our customers have been using these marvelous fishes for their dishes forever. You can choose the fish type you want by watching our live stream of the catfishes type through this website .Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Catfish';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Tuna is very well known seafood worldwide, there's nosaying for that. but there are very few shops that you can buy the best Tunas. And talking about these fishes quality most shops have been receiving low ranking for it. proud to say that our shop never has been there. Feel free to choose and buy the tuna you needed, high quality guaranteed as always. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Tuna';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Trout i a rare seafood to find in this country. happy to say that we are able to provide you this great fish from our shop. We contribute these fiss from the best known companies worldwide. Please kindly make sure to contact our manager before ordering this fish because of the least amount that we have currently. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Trout';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Flounder is one of well know seafood in our shop. You can watch our live stream and judge the quality of the fish and order the exact fish by your own after contacting our seafood manager. It is not necessart to follow before instructions you can also just order it and we will make sure to check the quality before deliverying .Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Flounder';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Cod is one of well known seafood in our store. You can shop all different type of Cods you needed if some type is not available currenlty please feel free to contact our seafood manager and inforom us. We will inform you when it will be available. and we will make sure to deliver it on time. Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Cod';
+
+UPDATE the_seafood_department
+SET seafood_desc = "Haddock is the seafood that available in our store almost all the time. So feel free to add to this seafood to your cart and buy it as you like cause like as always, we will make sure to check the quality and distribute you the best .Contact our seafood department manager - 0775654325 for more info"
+WHERE seafood_name = 'Haddock';
+

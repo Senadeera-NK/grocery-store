@@ -73,16 +73,18 @@ var span = document.getElementsByClassName("close")[0];
 
 
 //function to getting the element which is clicked by the user
-function onClick(element) {
+function onClick(element, src, name, desc, size, price, measurement) {
   //when user clicked making the modal visible
   modal.style.display = "block";
-  document.getElementById("modal-img").src = "images/the_produce_department/fruits/apples.jpg";
-  document.getElementById("modal-item-name").innerText = "Apples";
-  document.getElementById("modal-description").innerText = "Apples are mostly grow in Foreign countries, such as USA, China and Canada. Our shops most apples have been distributed by Chinese main apple market. There are several noticeable varieties of apples, in our shop. You can use the 'live watch' to watch all the apples varieties currently available.";
-  document.getElementById('modal-amount-price').innerText = "1Kg = $34.00";
-  document.getElementById('modal-measurement-type').innerText = "Kg";
 
-  console.log(element.target.className);
+  console.log(name);
+
+  //filling all the infos of the item in the modal//
+  document.getElementById("modal-img").src = src;
+  document.getElementById("modal-item-name").innerText = name;
+  document.getElementById("modal-description").innerText = desc;
+  document.getElementById('modal-amount-price').innerText = size+ " = "+ price;
+  document.getElementById('modal-measurement-type').innerText = measurement;
 }
 
 // When the user clicks on <span> (x), close the modal
