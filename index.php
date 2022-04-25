@@ -7,12 +7,10 @@
 session_start();
 //including db.php file to connect to db
 include ("db.php");
-
-echo "<script type='text/javascrcipt' src='index.js'></script>";
 echo "<body>";
 
 //including 'header' file to the page
-include('header.html');?>
+include('header.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -155,12 +153,10 @@ echo      "</div>";
 echo      "<button id = 'add-cart-btn' class='add-cart-btn'>Add Cart</button>";
 echo    "</div>";
 echo  "</div>";
-//<?php echo json_encode($data); 
 echo "</div>";
+
 ?>
 <!-- adding the js file for three horizontal sliders -->
-
-<!-- <script type="text/javascript">var sample = ;</script>  -->
 <script type="text/JavaScript" src = "index.js"></script>
 
 <?php
