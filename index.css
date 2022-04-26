@@ -221,13 +221,15 @@ form button{
   font-size :85%;
 }
 /* -----signin modal---------- */
-.signin-modal{
+.signin-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  padding-top: 2rem; /* Location of the box */
+  padding-bottom : 2rem;
+  margin-bottom: 4rem;
+  left: 0;
   top: 0;
-  padding-top:2rem;
-  padding-bottom:2rem;
 
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -235,21 +237,24 @@ form button{
   background-color: rgb(0,0,0); /*Fallback color */
   background-color: rgba(0,0,0,0.4);/* Black w/ opacity */
 }
+.signin-modal-content {
 
-/* declaring this close Button for signin modal again for maintain the flow and clarity of the css file */
-.signin-close {
-  color: #aaaaaa;
-  float: right;
-  margin-right: 4rem;
-  font-size: 28px;
-  font-weight: bold;
 }
 
-.signin-close:hover,
-.signin-close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.signin-modal-content h2 {
+
+}
+
+.signin-username {
+
+}
+
+.signin-password {
+
+}
+
+.signin-btn {
+
 }
 
 

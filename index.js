@@ -92,32 +92,20 @@ span.onclick = function() {
 
 
 //---------function of the signin modal----------//
-//getting the signin modal to a variableby it's ID
-var signin_modal = document.getElementById("signin-modal");
-
-//getting the signin modal close(x) to a variable
-var signin_close = document.getElementsByClassName("signin-close")[0];
-
-function onClick_signin(){
+var signin_modal = document.getElementById('signin-modal');
+function onClick_signin(element) {
   signin_modal.style.display = "block";
 }
 
+var signin_close = document.getElementsByClassName('signin-close')[0];
 signin_close.onclick = function() {
   signin_modal.style.display = "none";
 }
-
-
-
-
-
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-  }
-  else if(event.target == signin_modal) {
-    signin_modal.style.display = "none";
   }
 }
 

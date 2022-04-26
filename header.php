@@ -17,16 +17,20 @@
       echo   "<li id='user_login' onclick='onClick_signin(this)' >Sign In</a></li>";
       echo "</ul>";
 
-      //------------the model for signin----------//
-      echo "<div id='signin-modal' class='signin-modal'>";
-      echo  "<div class='modal-content'>";
-      echo   "<span class='signin-close'>&times;</span>";
+      // signin - modal
+      echo "<div class='signin-modal' id='signin-modal'>";
+      echo  "<div class='signin-modal-content'>";
+      echo    "<span class='signin-close'>&times;</span>";
       echo    "<h2>Sign In</h2>";
-      echo    "<p>Name</p>";
-      echo    "<input type='text' id='userName'>";
-      echo    "<p>Email</p>";
-      echo    "<input type='text' id='userEmail'>";
-      echo    "<button id='signin-btn' class='signin-btn'>Sign In</button>";
+      echo    "<div class='name-block'>";
+      echo      "<p>Name</p>";
+      echo      "<input type='text' class='signin-username' id='signin-username'>";
+      echo    "</div>";
+      echo    "<div class='password-block'>";
+      echo      "<p>Password</p>";
+      echo      "<input type='password' class='signin-password' id='signin-password'>";
+      echo    "</div>";
+      echo    "<button class='signin-btn' id='signin-btn'>Sign In</button>";
       echo  "</div>";
       echo "</div>";
   ?>
