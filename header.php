@@ -14,7 +14,7 @@
       echo   "<li><a href=''>Home</a></li>";
       echo   "<li><a href=''>Cashier</a></li>";
       echo   "<li><a href=''>About Us</a></li>";
-      echo   "<li id='user_login' onclick='onClick_signin(this)' >Sign In</a></li>";
+      echo   "<li id='user_signin' onclick='onClick_signin(this)' >Sign In</a></li>";
       echo "</ul>";
 
       // signin - modal
@@ -22,11 +22,11 @@
       echo  "<div class='signin-modal-content'>";
       echo    "<span class='signin-close'>&times;</span>";
       echo    "<h2>Sign In</h2>";
-      echo    "<div class='name-block'>";
+      echo    "<div class='signin-username-block'>";
       echo      "<p>Name</p>";
       echo      "<input type='text' class='signin-username' id='signin-username'>";
       echo    "</div>";
-      echo    "<div class='password-block'>";
+      echo    "<div class='signin-password-block'>";
       echo      "<p>Password</p>";
       echo      "<input type='password' class='signin-password' id='signin-password'>";
       echo    "</div>";
