@@ -91,17 +91,34 @@ span.onclick = function() {
 }
 
 
-//---------function of the signin modal----------//
+//-------------------signin modal------------------------//
+//getting the signin modal to a variable
 var signin_modal = document.getElementById('signin-modal');
+
+//getting both usernam, password entering textfields to variables
+var signin_username_textfield = document.getElementById('signin-username');
+var signin_password_textfield = document.getElementById('signin-password');
+
+//declaring a function to show up the modal when "signin" clicked
 function onClick_signin(element) {
   signin_modal.style.display = "block";
+
+   //showing nothing in textfields(removing all before entered values in textfields)
+   signin_username_textfield.value = null;
+   signin_password_textfield.value = null;
+
 }
 
+//getting the signin(x) to a variable
 var signin_close = document.getElementsByClassName('signin-close')[0];
-signin_close.onclick = function() {
-  signin_modal.style.display = "none";
-}
 
+
+//declaring a function to close the signin modal when (x) clicked
+signin_close.onclick = function() {
+  //stop displaying the modal
+  signin_modal.style.display = "none";
+
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -111,5 +128,12 @@ window.onclick = function(event) {
   else if(event.target == signin_modal) {
     signin_modal.style.display = "none";
   }
+}
+
+
+// ---------------------- signin buton related ------------------------//
+function clickme(){
+  var result = "<?php php_func(); ?>";
+  alert(result);
 }
 

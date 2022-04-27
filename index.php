@@ -55,13 +55,6 @@ include('header.php');?>
   $exeSQL_prepared = mysqli_query($connection, $sql_prepared) or die(mysqli_error($connection));
   $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
   $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
-
-  //trying to get all executed items to arrays
-  // $array_meat = mysqli_fetch_array($exeSQL_meat);
-  // $array_seafood = mysqli_fetch_array($exeSQL_seafood);
-  // $array_prepared = mysqli_fetch_array($exeSQL_prepared);
-  // $array_wine_beer = mysqli_fetch_array($exeSQL_wine_beer);
-  // $array_health_beauty = mysqli_fetch_array($exeSQL_health_beauty);
   
   echo "<h3 class='home-topics'>recently added</h3>";
 

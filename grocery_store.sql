@@ -290,3 +290,26 @@ UPDATE the_seafood_department
 SET seafood_desc = "Haddock is the seafood that available in our store almost all the time. So feel free to add to this seafood to your cart and buy it as you like cause like as always, we will make sure to check the quality and distribute you the best .Contact our seafood department manager - 0775654325 for more info"
 WHERE seafood_name = 'Haddock';
 
+
+CREATE TABLE the_health_beauty_department (
+  healthbeauty_id int NOT NULL AUTO_INCREMENT,
+  healthbeauty_type char(40) NOT NULL,
+  healthbeauty_name char(40) NOT NULL,
+  PRIMARY KEY healthbeauty_id
+);
+
+
+-- adding the users table into grocery_store
+CREATE TABLE users_department (
+  user_id int NOT NULL AUTO_INCREMENT,
+  user_name char(255) NOT NULL,
+  user_mail char(255) NOT NULL,
+  user_password char(255) NOT NULL,
+  PRIMARY KEY user_id
+);
+
+INSERT INTO users_department(user_name, user_mail, user_password)
+VALUES ("s.a. nanduni kaveesha", "naksathaudage2000@gmail.com", "fbi0778593462");
+
+
+

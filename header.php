@@ -10,6 +10,10 @@
 <body>
   <header>
     <?php
+
+      // including the db's php file
+      include('db.php');
+
       echo "<ul>";
       echo   "<li><a href=''>Home</a></li>";
       echo   "<li><a href=''>Cashier</a></li>";
@@ -22,17 +26,24 @@
       echo  "<div class='signin-modal-content'>";
       echo    "<span class='signin-close'>&times;</span>";
       echo    "<h2>Sign In</h2>";
-      echo    "<div class='signin-username-block'>";
-      echo      "<p>Name</p>";
-      echo      "<input type='text' class='signin-username' id='signin-username'>";
-      echo    "</div>";
-      echo    "<div class='signin-password-block'>";
-      echo      "<p>Password</p>";
-      echo      "<input type='password' class='signin-password' id='signin-password'>";
-      echo    "</div>";
-      echo    "<button class='signin-btn' id='signin-btn'>Sign In</button>";
+      echo    "<form method='post'>";
+      echo      "<div class='signin-username-block'>";
+      echo        "<p>Name</p>";
+      echo        "<input type='text' class='signin-username' id='signin-username'>";
+      echo      "</div>";
+      echo      "<div class='signin-password-block'>";
+      echo        "<p>Password</p>";
+      echo        "<input type='password' class='signin-password' id='signin-password'>";
+      echo      "</div>";
+      echo     "<button onclick='clickme()'>Sign In</button>";
+      echo    "</form>";   
       echo  "</div>";
       echo "</div>";
+      
+      function php_func(){
+        echo "stay safe!";
+      }
+      
   ?>
   <script type="text/JavaScript" src = "index.js"></script>
   </header>
