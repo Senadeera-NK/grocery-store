@@ -132,12 +132,27 @@ window.onclick = function(event) {
 
 
 // ---------------------- signin buton related ------------------------//
-function clickme(){
-  var result = "<?php php_func(); ?>"
-  alert(result);
-}
+function empty_username(){
+  console.log('empty user name');
 
-function php_checking(){
-  console.log("php checking successed !!!");
 }
+function empty_userpassword(){
+  console.log('empty user password');
 
+}
+function empty_textfields(){
+  console.log('empty textfields');
+
+}
+function user_not_exists(){
+  console.log('user does not exists');
+
+}
+function password_not_matched(){
+  console.log('password does not match');
+
+}
+function user_found(){
+  console.log('user found');
+
+}

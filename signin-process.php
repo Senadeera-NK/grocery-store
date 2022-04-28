@@ -18,6 +18,8 @@ $userpassword = $_POST['signin-password'];
 if (empty($username && $userpassword)){
   echo "<p>username and userpassword has not been entered !!!</p>";
 }
+
+
 else{
 
   //SQL query to get the entered user's details if the specified user exists in the table
