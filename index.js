@@ -133,7 +133,7 @@ window.onclick = function(event) {
 
 // ---------------------- signin buton related ------------------------//
 function clickme(){
-  var result = "<?php php_func(); ?>";
+  var result = "<?php php_func(); ?>"
   alert(result);
 }
 
