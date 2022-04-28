@@ -10,7 +10,6 @@
 <body>
   <header>
     <?php
-
       // including the db's php file
       include("db.php");
 
@@ -29,11 +28,11 @@
       echo    "<form method='post' action='signin-process.php'>";
       echo      "<div class='signin-username-block'>";
       echo        "<p>Name</p>";
-      echo        "<input type='text' class='signin-username' id='signin-username'>";
+      echo        "<input type='text' class='signin-username' id='signin-username' name='signin-username'>";
       echo      "</div>";
       echo      "<div class='signin-password-block'>";
       echo        "<p>Password</p>";
-      echo        "<input type='password' class='signin-password' id='signin-password'>";
+      echo        "<input type='password' class='signin-password' id='signin-password' name='signin-password'>";
       echo      "</div>";
       echo     "<button onclick='clickme()'>Sign In</button>";
       echo    "</form>";   

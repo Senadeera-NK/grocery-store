@@ -137,3 +137,7 @@ function clickme(){
   alert(result);
 }
 
+function php_checking(){
+  console.log("php checking successed !!!");
+}
+
