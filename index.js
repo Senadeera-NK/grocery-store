@@ -152,7 +152,10 @@ function password_not_matched(){
   console.log('password does not match');
 
 }
-function user_found(){
-  console.log('user found');
 
+//function to invoke when user is signed in successfully
+function user_found(){
+  document.getElementById('user_signin').innerHTML="wwww";
+  //open the index.php file in the same page cause it normally opening only the header.php file
+  window.open("index.php","_self");
 }

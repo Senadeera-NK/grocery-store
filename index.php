@@ -10,7 +10,9 @@ include ("db.php");
 echo "<body>";
 
 //including 'header' file to the page
-include('header.php');?>
+echo "<div id='include-header'></div>";
+include("header.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
