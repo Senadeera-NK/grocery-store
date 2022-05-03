@@ -131,7 +131,7 @@ window.onclick = function(event) {
 }
 
 
-// ---------------------- signin buton related ------------------------//
+// ---------------------- signin button related ------------------------//
 function empty_username(){
   console.log('empty user name');
 
@@ -154,8 +154,7 @@ function password_not_matched(){
 }
 
 //function to invoke when user is signed in successfully
-function user_found(){
-  document.getElementById('user_signin').innerHTML="wwww";
+function user_found(name){
+  document.getElementById('user_signin').innerHTML = name;
   //open the index.php file in the same page cause it normally opening only the header.php file
-  window.open("index.php","_self");
 }
