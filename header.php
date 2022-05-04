@@ -18,7 +18,10 @@
     echo   "<li><a href=''>Home</a></li>";
     echo   "<li><a href=''>Cashier</a></li>";
     echo   "<li><a href=''>About Us</a></li>";
-    echo   "<li id='user_signin' onclick='onClick_signin(this)' >Sign In</a></li>";
+    echo   "<div class='float-right'>";
+    echo   "<li id='user_signin' onclick='onClick_signin(this)' >Sign In</li>";
+    echo   "<li id='shopping-cart' class='shopping-cart'><img src='images/shopping-cart.jpg'></li>";
+    echo   "</div>";
     echo "</ul>";
 
     // signin - modal

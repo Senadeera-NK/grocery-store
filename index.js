@@ -155,6 +155,8 @@ function password_not_matched(){
 
 //function to invoke when user is signed in successfully
 function user_found(name){
-  document.getElementById('user_signin').innerHTML = name;
+  console.log(name);
+  var obj = new String(name);
+  document.getElementById('user_signin').innerHTML = '<abbr title='+ obj +'><img src="images/profile-logo.jpg"></abbr>';
   //open the index.php file in the same page cause it normally opening only the header.php file
 }

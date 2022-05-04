@@ -204,7 +204,7 @@ echo "</div>";
                 $user_name = $_SESSION['user_name'];
                 $user_password = $_SESSION['user_password'];
 
-                echo '<script type="text/JavaScript">user_found('.$user_name.');</script>';
+                echo "<script type='text/JavaScript'>user_found('$user_name');</script>";
               }
             }
           }

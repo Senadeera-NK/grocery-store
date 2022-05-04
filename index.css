@@ -27,14 +27,35 @@ header li a{
   color:black;
   text-decoration:none;
 }
-
-#user_signin{
-  float: right;
+.float-right{
+  float:right;
+}
+#shopping-cart{
+  float:right;
+  height:3rem;
+  width:3rem;
+  margin-right: 1rem;
+}
+#shopping-cart img{
+  position: absolute;
+  top:0;
+  height:3rem;
+  width:3rem;
+}
+#shopping-cart:focus, #shopping-cart:hover{
+  cursor: pointer;
+}
+#user_signin img{
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  height:3rem;
+  width:3rem;
 }
 #user_signin:focus,
 #user_signin:hover {
   cursor: pointer;
-}
+} 
 /* ---------index styling--------- */
 /* --------form styling------- */
 form {

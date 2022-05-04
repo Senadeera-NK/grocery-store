@@ -311,5 +311,6 @@ CREATE TABLE users_department (
 INSERT INTO users_department(user_name, user_mail, user_password)
 VALUES ("s.a. nanduni kaveesha", "naksathaudage2000@gmail.com", "fbi0778593462");
 
-
+INSERT INTO users_department(user_name, user_password, user_mail)
+VALUES("nanduni kaveesha", "1234","nanduni1234@gmail.com");
 
