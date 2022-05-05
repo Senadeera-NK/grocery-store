@@ -150,6 +150,23 @@ echo    "</div>";
 echo  "</div>";
 echo "</div>";
 
+    //----------The modal for profile ----------//
+echo "<div class='profile-modal' id='profile-modal'>";
+echo  "<div class='profile-modal-content' id='profile-modal-content'>";
+echo   "<section class='profile-info' id='profile-info'>";
+echo     "<img src='images/profile-logo.jpg'>";
+echo     "<p>name</p>";
+echo     "<p>Email</p>";
+echo   "</section>";
+echo   "<ul class='profile-list' id='profile-list'>";
+echo    "<li>Change Password</li>";
+echo    "<li>Change Profile</li>";
+echo    "<li>Settings</li>";
+echo   "</ul>";
+echo   "<input type='button' value='Sign Out'>";
+echo  "</div>";
+echo "</div>";
+
 
 //header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
     //function to invoke if the signin button has clicked
@@ -200,10 +217,13 @@ echo "</div>";
                 $_SESSION['user_id'] = $result_array['user_id'];
                 $_SESSION['user_name'] = $result_array['user_name'];
                 $_SESSION['user_password'] = $result_array['user_password'];
+
+                //declaring new variables to the sessions's array items
                 $user_id = $_SESSION['user_id'];
                 $user_name = $_SESSION['user_name'];
                 $user_password = $_SESSION['user_password'];
 
+                //invoking the function that related to successfully signed in
                 echo "<script type='text/JavaScript'>user_found('$user_name');</script>";
               }
             }
@@ -216,6 +236,7 @@ echo "</div>";
 <!-- adding the js file for three horizontal sliders -->
 <script type="text/JavaScript" src = "index.js"></script>
 
+<!-- including the footer of the website -->
 <?php
 include('footer.html');
 ?>

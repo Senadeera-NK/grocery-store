@@ -95,7 +95,7 @@ span.onclick = function() {
 //getting the signin modal to a variable
 var signin_modal = document.getElementById('signin-modal');
 
-//getting both usernam, password entering textfields to variables
+//getting both username, password entering textfields to variables
 var signin_username_textfield = document.getElementById('signin-username');
 var signin_password_textfield = document.getElementById('signin-password');
 
@@ -155,8 +155,16 @@ function password_not_matched(){
 
 //function to invoke when user is signed in successfully
 function user_found(name){
-  console.log(name);
-  var obj = new String(name);
-  document.getElementById('user_signin').innerHTML = '<abbr title='+ obj +'><img src="images/profile-logo.jpg"></abbr>';
-  //open the index.php file in the same page cause it normally opening only the header.php file
+
+  //changing the "sign in" logo and function to signed in function, when mouse hover user name will display as a tooltip
+
+
+  //TODO
+  document.getElementById('user_signin').id = 'profile-modal';
+  document.getElementById('profile-modal').innerHTML = '<abbr title='+ name +'><img src="images/profile-logo.jpg"></abbr>';
+  //change the sign_in id to make it's own profile popup modal and stop popping the signin popup modal
+
+  document.getElementById('profile-modal').onclick = function(){
+    profile.getElementById('profile-modal').style.display='block';
+  }
 }

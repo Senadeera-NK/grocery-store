@@ -312,8 +312,59 @@ form button{
   width:10rem;
 
 }
+/* --------- profile-modal styling -------- */
+#profile-modal img{
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  height:3rem;
+  width:3rem;
+}
+#profile-modal:focus,
+#profile-modal:hover {
+  cursor: pointer;
+} 
 
+.profile-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: 1;
+}
 
+.profile-info {
+  position: absolute;
+  width:100rem;
+  height:150rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.profile-info img {
+  width: 50rem;
+  height: 50rem;
+  float: left;
+}
+
+.profile-list{
+  font-size: 30%;
+}
+
+.profile-list ul {
+
+}
+
+.profile-list li {
+
+}
+
+.profile-modal button{
+  width: 80%;
+  padding: 3%;
+  border: 1px solid black;
+  height: 3rem;
+
+}
 /*-----footer styling-----------*/
 footer{
   text-align: center;
