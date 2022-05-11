@@ -157,14 +157,16 @@ function password_not_matched(){
 function user_found(name){
 
   //changing the "sign in" logo and function to signed in function, when mouse hover user name will display as a tooltip
-
+  document.getElementById('user_signin').innerHTML = '<abbr title='+ name +'><img src="images/profile-logo.jpg"></abbr>';
 
   //TODO
-  document.getElementById('user_signin').id = 'profile-modal';
-  document.getElementById('profile-modal').innerHTML = '<abbr title='+ name +'><img src="images/profile-logo.jpg"></abbr>';
+  
   //change the sign_in id to make it's own profile popup modal and stop popping the signin popup modal
 
-  document.getElementById('profile-modal').onclick = function(){
-    profile.getElementById('profile-modal').style.display='block';
+  document.getElementById('user_signin').onclick = function(){
+    document.getElementById('user_signin').id = 'profile-modal';
   }
+
+  var i = document.getElementById('user_signin').id;
+  console.log(i);
 }
