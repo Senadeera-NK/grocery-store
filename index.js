@@ -130,8 +130,13 @@ window.onclick = function(event) {
   }
 }
 
+//----------------------- signin btn in modal ----------------------------//
+function signin_btn_modal(element) {
+  console.log('signin btn clicked in modal');
 
-// ---------------------- signin button related ------------------------//
+}
+
+// ---------------------- signin (submit) button related ------------------------//
 function empty_username(){
   console.log('empty user name');
 
@@ -165,8 +170,10 @@ function user_found(name){
 
   document.getElementById('user_signin').onclick = function(){
     document.getElementById('user_signin').id = 'profile-modal';
+
   }
 
-  var i = document.getElementById('user_signin').id;
-  console.log(i);
+  document.getElementById('user_signin').onclick = function(){
+    profile.getElementById('profile-modal').style.display = "block";
+  }
 }

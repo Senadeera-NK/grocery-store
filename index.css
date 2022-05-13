@@ -313,6 +313,13 @@ form button{
 
 }
 /* --------- profile-modal styling -------- */
+#profile-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: -1;
+}
 #profile-modal img{
   position: absolute;
   margin-top: 0;
@@ -325,13 +332,6 @@ form button{
   cursor: pointer;
 } 
 
-.profile-modal {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.329);
-  z-index: -1;
-}
 
 .profile-info {
   position: absolute;

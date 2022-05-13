@@ -38,7 +38,7 @@
     echo        "<p>Password</p>";
     echo        "<input type='password' class='signin-password' id='signin-password' name='signin-password'>";
     echo      "</div>";
-    echo     "<input type='submit' name='signin-btn' value='Sign In' class='signin-btn'>";
+    echo     "<input type='submit' name='signin-btn' onclick='signin_btn_modal(this)' value='Sign In' class='signin-btn'>";
     echo    "</form>";   
     echo  "</div>";
     echo "</div>";
