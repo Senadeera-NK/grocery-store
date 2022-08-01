@@ -152,7 +152,7 @@ echo      "<div class= 'modal-amount-price' id = 'modal-amount-price'> </div>";
 echo      "<div class='modal-amount-measurement'>";
 echo        "<p> Amount <input type = 'number' id='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
 echo      "</div>";
-echo      "<button id = 'add-cart-btn' class='add-cart-btn'>Add Cart</button>";
+echo      "<button id = 'add-cart-btn' name='add-cart-btn' class='add-cart-btn'>Add Cart</button>";
 echo    "</div>";
 echo  "</div>";
 echo "</div>";
@@ -237,6 +237,12 @@ echo "</div>";
           }
         }
       }     
+    }
+
+
+    //------------------------Add-cart-btn function---------------------------//
+    if(array_key_exists('add-cart-btn', $_POST)){
+      echo "<script type='text/JavaScript'>alert('Welcome to Geeks for Geeks')</script>";
     }
 
 ?>
