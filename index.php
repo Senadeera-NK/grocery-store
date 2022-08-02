@@ -149,10 +149,12 @@ echo    "<h2 id = 'modal-item-name'></h2>";
 echo      "<div class = 'modal-description' id = 'modal-description'>";
 echo      "</div>";
 echo      "<div class= 'modal-amount-price' id = 'modal-amount-price'> </div>";
+echo       "<form method='post' action='index.php'>";
 echo      "<div class='modal-amount-measurement'>";
 echo        "<p> Amount <input type = 'number' id='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
 echo      "</div>";
-echo      "<button id = 'add-cart-btn' name='add-cart-btn' class='add-cart-btn'>Add Cart</button>";
+echo      "<input type='submit' id = 'add-cart-btn' class='add-cart-btn' name='add-cart-btn' value='Add Cart'>";
+echo      "</form>";
 echo    "</div>";
 echo  "</div>";
 echo "</div>";
@@ -172,6 +174,24 @@ echo    "<li>Settings</li>";
 echo   "</ul>";
 echo   "<input type='button' value='Sign Out'>";
 echo  "</div>";
+echo "</div>";
+
+
+//-----------The modal for cart-------------------//
+echo "<div class='cart-modal' id='cart-modal'>";
+echo    "<div class='cart-modal-content' id='cart-modal-content'>";
+echo      "<div class='cart-items-block' id='cart-items-block'>";
+
+echo        "<div class='cart-item-block' id='cart-item-block'>";
+echo          "<img class='cart-item-img' src='vegetable.jpg'>";
+echo          "<p class='cart-item-name'></p>";
+echo          "<p class='cart-item-quantity'></p>";
+echo          "<p class='cart-item-price'></p>";
+echo          "<button class='cart-item-remove-btn' id='cart-item-remove-btn'>remove</button>";
+echo        "</div>";
+
+echo      "</div>";
+echo    "</div>";
 echo "</div>";
 
 
