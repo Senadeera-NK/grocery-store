@@ -176,10 +176,10 @@ echo   "<input type='button' value='Sign Out'>";
 echo  "</div>";
 echo "</div>";
 
-
 //-----------The modal for cart-------------------//
 echo "<div class='cart-modal' id='cart-modal'>";
 echo    "<div class='cart-modal-content' id='cart-modal-content'>";
+echo    "<span class='cart-modal-close'>&times;</span>";
 echo      "<div class='cart-items-block' id='cart-items-block'>";
 
 echo        "<div class='cart-item-block' id='cart-item-block'>";
