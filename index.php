@@ -187,7 +187,7 @@ echo          "<img class='cart-item-img' src='vegetable.jpg'>";
 echo          "<p class='cart-item-name'></p>";
 echo          "<p class='cart-item-quantity'></p>";
 echo          "<p class='cart-item-price'></p>";
-echo          "<button class='cart-item-remove-btn' id='cart-item-remove-btn'>remove</button>";
+echo          "<button class='cart-item-remove-btn' id='cart-item-remove-btn' onclick='onclick_cart_modal(this)'>remove</button>";
 echo        "</div>";
 
 echo      "</div>";

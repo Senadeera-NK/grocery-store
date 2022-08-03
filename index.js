@@ -177,3 +177,9 @@ function user_found(name){
     profile.getElementById('profile-modal').style.display = "block";
   }
 }
+
+
+// ---------------- cart modal functions starts ---------------------------//
+var cart_modal = document.getElementById('cart-modal')
+// ---------------- cart modal functions ends ---------------------------//
+
