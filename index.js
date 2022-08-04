@@ -120,15 +120,6 @@ signin_close.onclick = function() {
 
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-  else if(event.target == signin_modal) {
-    signin_modal.style.display = "none";
-  }
-}
 
 //----------------------- signin btn in modal ----------------------------//
 function signin_btn_modal(element) {
@@ -179,7 +170,37 @@ function user_found(name){
 }
 
 
-// ---------------- cart modal functions starts ---------------------------//
+// ---------------- cart modal functions STARTS ---------------------------//
 var cart_modal = document.getElementById('cart-modal')
-// ---------------- cart modal functions ends ---------------------------//
 
+//declaring a function to show up the modal when "shopping cart" clicked
+function onclick_shopping_cart(element) {
+  cart_modal.style.display = "block";
+}
+
+//getting the cart-modal-close(x) to a variable
+var cart_modal_close = document.getElementsByClassName('cart-modal-close')[0];
+
+
+//declaring a function to close the cart-modal when (x) clicked
+cart_modal_close.onclick = function() {
+  //stop displaying the modal
+  cart_modal.style.display = "none";
+
+}
+// ---------------- cart modal functions ENDS ---------------------------//
+
+
+
+// ----------- close button for modals(x) STARTS -----------------//
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+ else if(event.target == signin_modal) {
+    signin_modal.style.display = "none";
+  }
+
+}
+// ----------- close button for modals(x) ENDS -----------------//

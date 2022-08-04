@@ -260,11 +260,6 @@ echo "</div>";
     }
 
 
-    //------------------------Add-cart-btn function---------------------------//
-    if(array_key_exists('add-cart-btn', $_POST)){
-      echo "<script type='text/JavaScript'>alert('Welcome to Geeks for Geeks')</script>";
-    }
-
 ?>
 <!-- adding the js file for three horizontal sliders -->
 <script type="text/JavaScript" src = "index.js"></script>

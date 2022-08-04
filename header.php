@@ -20,7 +20,7 @@
     echo   "<li><a href=''>About Us</a></li>";
     echo   "<div class='float-right'>";
     echo   "<li id='user_signin' onclick='onClick_signin(this)' >Sign In</li>";
-    echo   "<li id='shopping-cart' class='shopping-cart'><img src='images/shopping-cart.jpg'></li>";
+    echo   "<li id='shopping-cart' class='shopping-cart' onclick='onclick_shopping_cart(this)'><img src='images/shopping-cart.jpg'></li>";
     echo   "</div>";
     echo "</ul>";
 
