@@ -170,12 +170,12 @@ function user_found(name){
 }
 // ----------- item add to cart button function STARTS ---------------//
 // ------- getting the amount input for an item to a variable ------//
-var item_amount = document.getElementById('modal-amount');
+var item_amount = document.getElementById('modal-amount').value;
 function onclick_add_to_cart(element) {
-  if (item_amount == '') {
-    
+  if (item_amount.length == 0) {
+    alert('empty item amount');
   }
-  console.log('wow')
+  console.log(item_amount)
 }
 // ----------- item add to cart button function ENDS ------------//
 
