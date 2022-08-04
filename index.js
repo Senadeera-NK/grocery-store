@@ -168,9 +168,19 @@ function user_found(name){
     profile.getElementById('profile-modal').style.display = "block";
   }
 }
-
+// ----------- item add to cart button function STARTS ---------------//
+// ------- getting the amount input for an item to a variable ------//
+var item_amount = document.getElementById('modal-amount');
+function onclick_add_to_cart(element) {
+  if (item_amount == '') {
+    
+  }
+  console.log('wow')
+}
+// ----------- item add to cart button function ENDS ------------//
 
 // ---------------- cart modal functions STARTS ---------------------------//
+// -------- getting cart-modal to a variable ------------//
 var cart_modal = document.getElementById('cart-modal')
 
 //declaring a function to show up the modal when "shopping cart" clicked
@@ -178,17 +188,18 @@ function onclick_shopping_cart(element) {
   cart_modal.style.display = "block";
 }
 
+
+
 //getting the cart-modal-close(x) to a variable
 var cart_modal_close = document.getElementsByClassName('cart-modal-close')[0];
-
-
 //declaring a function to close the cart-modal when (x) clicked
 cart_modal_close.onclick = function() {
   //stop displaying the modal
   cart_modal.style.display = "none";
-
 }
 // ---------------- cart modal functions ENDS ---------------------------//
+
+
 
 
 
@@ -201,6 +212,8 @@ window.onclick = function(event) {
  else if(event.target == signin_modal) {
     signin_modal.style.display = "none";
   }
-
+ else if(event.target == cart_modal) {
+    cart_modal.style.display = "none";
+ }
 }
 // ----------- close button for modals(x) ENDS -----------------//
