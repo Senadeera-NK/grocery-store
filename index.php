@@ -148,7 +148,7 @@ echo    "<div class='modal-content-right' id = 'modal-content-right'>";
 echo    "<h2 id = 'modal-item-name'></h2>";
 echo      "<div class = 'modal-description' id = 'modal-description'>";
 echo      "</div>";
-echo      "<div class= 'modal-amount-price' id = 'modal-amount-price'> </div>";
+echo      "<div class= 'modal-amount-price' id='modal-amount-price'> </div>";
 echo      "<div class='modal-amount-measurement'>";
 echo        "<p> Amount <input type='number' id='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
 echo      "</div>";

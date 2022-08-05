@@ -170,12 +170,20 @@ function user_found(name){
 }
 // ----------- item add to cart button function STARTS ---------------//
 // ------- getting the amount input for an item to a variable ------//
-var item_amount = document.getElementById('modal-amount').value;
+var item_amount = document.getElementById('modal-amount');
 function onclick_add_to_cart(element) {
-  if (item_amount.length == 0) {
+  if (item_amount.value.length == 0) {
     alert('empty item amount');
   }
-  console.log(item_amount)
+  var item_name = document.getElementById('modal-item-name');
+  var item_price_all = document.getElementById('modal-amount-price');
+  var item_price = "";
+
+   for (var i=8; i <= item_price_all.innerHTML.length - 1; i++){
+     item_price += (item_price_all.innerHTML[i]);
+   }
+   console.log(item_price);
+  console.log('item name ='+item_name.innerHTML+", item price = "+item_price+" ,item amount ="+item_amount.value);
 }
 // ----------- item add to cart button function ENDS ------------//
 
