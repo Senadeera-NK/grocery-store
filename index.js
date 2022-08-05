@@ -173,20 +173,29 @@ function user_found(name){
 var item_amount = document.getElementById('modal-amount');
 var item_name = document.getElementById('modal-item-name');
 var item_price_all = document.getElementById('modal-amount-price');
-var item_price = "";
+var user_chosen_items_list = [];
 
-for (var i=8; i <= item_price_all.innerHTML.length - 1; i++){
-    item_price += (item_price_all.innerHTML[i]);
-}
 
 function onclick_add_to_cart(element) {
+  var chosen_item_data_list = [];
   if (item_amount.value.length == 0) {
     alert('empty item amount');
   }
 
-  console.log(item_price);
-  console.log('item name ='+item_name.innerHTML+", item price = "+item_price+" ,item amount ="+item_amount.value);
+  var item_price = '';
+  for (var i=8; i <= item_price_all.innerHTML.length - 1; i++){
+      item_price += (item_price_all.innerHTML[i]);
+  }
+  var items_price = (parseFloat(item_price) * parseFloat(item_amount.value)).toFixed(2);
+    console.log((items_price));
+    console.log('item name ='+item_name.innerHTML+", item price = "+item_price+" ,item amount ="+item_amount.value);
+  chosen_item_data_list.push(item_name.innerHTML);
+  chosen_item_data_list.push(item_amount.value);
+  chosen_item_data_list.push(items_price);
+
+  user_chosen_items_list.push(chosen_item_data_list);
 }
+console.log(user_chosen_items_list);
 // ----------- item add to cart button function ENDS ------------//
 
 // ---------------- cart modal functions STARTS ---------------------------//
