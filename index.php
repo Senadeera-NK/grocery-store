@@ -157,7 +157,7 @@ echo    "</div>";
 echo  "</div>";
 echo "</div>";
 
-    //----------The modal for profile ----------//
+    //----------DEVELOPING = The modal for profile ----------//
 echo "<div class='profile-modal' id='profile-modal'>";
 echo  "<div class='profile-modal-content' id='profile-modal-content'>";
 echo   "<section class='profile-info' id='profile-info'>";
@@ -189,16 +189,6 @@ echo          "<button class='cart-item-remove-btn' id='cart-item-remove-btn'>re
 echo        "</div>";
 
 echo      "</div>";
-echo    "</div>";
-echo "</div>";
-
-
-//-----------The modal for alert boxes-------------------//
-echo "<div class='alert-modal' id='alert-modal'>";
-echo    "<div class='alert-modal-content' id='alert-modal-content'>";
-echo    "<span class='alert-close'>&times;</span>";
-echo      "<p class='alert-modal-msg' id='alert-modal-msg'></p>";
-echo      "<button class='alert-close-btn' id='alert-close-btn' onclick='onclick_alert_close(this)'> close </button>";
 echo    "</div>";
 echo "</div>";
 
@@ -266,7 +256,8 @@ echo "</div>";
         }
       }     
     }
-
+    //alert boxes for errors
+    include("alert-modal.php");
 
 ?>
 <!-- adding the js file for three horizontal sliders -->
@@ -274,5 +265,6 @@ echo "</div>";
 
 <!-- including the footer of the website -->
 <?php
+
 include('footer.html');
 ?>
