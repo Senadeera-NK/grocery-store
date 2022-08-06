@@ -193,6 +193,16 @@ echo    "</div>";
 echo "</div>";
 
 
+//-----------The modal for alert boxes-------------------//
+echo "<div class='alert-modal' id='alert-modal'>";
+echo    "<div class='alert-modal-content' id='alert-modal-content'>";
+echo    "<span class='alert-modal-close'>&times;</span>";
+echo      "<div class='alert-modal-msg'></div>";
+echo      "<button class='alert-btn' id=alert-btn> close </button>";
+echo    "</div>";
+echo "</div>";
+
+
 //header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
     //function to invoke if the signin button has clicked
     if (array_key_exists('signin-btn', $_POST)){

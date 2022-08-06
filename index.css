@@ -377,20 +377,6 @@ form button{
 .cart-modal-content h2 {
   margin-top: 1rem;
 }
-/* .signin-username-block {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.signin-username, .signin-password {
-  width: 15rem;
-  height: auto;
-  padding: 0.3rem;
-  font-size: 60%;
-}
-.signin-password-block {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-} */
 
 .cart-item-remove-btn {
   margin-top: 0.5rem;
@@ -452,7 +438,54 @@ form button{
   padding: 3%;
   border: 1px solid black;
   height: 3rem;
+}
 
+/*-------alert modal styling-------*/
+.alert-modal { /* this is that black background of the modal */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+}
+.alert-modal-content {
+  border: 1px solid black;
+  width: 25%;
+  height: auto;
+  margin-left: 40%;
+  margin-top: 5rem; 
+  padding-left: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: white;
+  font-size: 100%;
+}
+.alert-close {
+  top: 0;
+  float: right;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.alert-close:hover,
+.alert-close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.alert-modal-content h2 {
+  margin-top: 1rem;
+}
+
+.alert-btn {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width:10rem;
 }
 /*-----footer styling-----------*/
 footer{
