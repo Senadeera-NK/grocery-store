@@ -207,17 +207,9 @@ var cart_modal = document.getElementById('cart-modal')
 //declaring a function to show up the modal when "shopping cart" clicked
 function onclick_shopping_cart(element) {
   cart_modal.style.display = "block";
-}
+  }
 
 
-
-//getting the cart-modal-close(x) to a variable
-var cart_modal_close = document.getElementsByClassName('cart-modal-close')[0];
-//declaring a function to close the cart-modal when (x) clicked
-cart_modal_close.onclick = function() {
-  //stop displaying the modal
-  cart_modal.style.display = "none";
-}
 // ---------------- cart modal functions ENDS ---------------------------//
 
 // ---------------- alert modal function STARTS --------------------------//
