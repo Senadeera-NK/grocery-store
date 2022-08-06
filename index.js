@@ -181,7 +181,7 @@ var user_chosen_items_list = [];
 function onclick_add_to_cart(element) {
   var chosen_item_data_list = [];
   if (item_amount.value.length == 0) {
-    alert_box_popup("please enter an amount");
+    alert_box_popup("Please enter an amount");
   }
 
   var item_price = '';
@@ -232,7 +232,7 @@ function onclick_alert_close(element) {
   alert_modal.style.display = "none";
 }
 
-var alert_modal_close = document.getElementsByClassName('alert-modal-close')[0];
+var alert_modal_close = document.getElementsByClassName('alert-close')[0];
 alert_modal_close.onclick = function() {
   //stop displaying the alert modal
   alert_modal.style.display = "none";

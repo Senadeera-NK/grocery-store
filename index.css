@@ -454,8 +454,9 @@ form button{
 }
 .alert-modal-content {
   border: 1px solid black;
+  border-radius: 0.5rem;
   width: 25%;
-  height: auto;
+  height: 20%;
   margin-left: 40%;
   margin-top: 5rem; 
   padding-left: 2rem;
@@ -465,7 +466,10 @@ form button{
   font-size: 100%;
 }
 .alert-modal-msg {
-  
+  font-size: 1.2rem;
+  padding-top: 1.2rem;
+  padding-left: 1.8rem;
+  padding-bottom: 1.5rem;
 }
 .alert-close {
   top: 0;
@@ -483,12 +487,11 @@ form button{
   margin-top: 1rem;
 }
 
-.alert-btn {
+.alert-close-btn {
   margin-top: 0.5rem;
-  margin-left: 2rem;
-  padding: 0.5rem;
+  margin-left: 5rem;
   font-size: 1rem;
-  width:10rem;
+  width:5rem;
 }
 /*-----footer styling-----------*/
 footer{
