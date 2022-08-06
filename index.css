@@ -464,6 +464,9 @@ form button{
   background-color: white;
   font-size: 100%;
 }
+.alert-modal-msg {
+  
+}
 .alert-close {
   top: 0;
   float: right;

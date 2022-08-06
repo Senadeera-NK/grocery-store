@@ -197,8 +197,8 @@ echo "</div>";
 echo "<div class='alert-modal' id='alert-modal'>";
 echo    "<div class='alert-modal-content' id='alert-modal-content'>";
 echo    "<span class='alert-modal-close'>&times;</span>";
-echo      "<div class='alert-modal-msg'></div>";
-echo      "<button class='alert-btn' id=alert-btn> close </button>";
+echo      "<h3 class='alert-modal-msg' id='alert-modal-msg'></h3>";
+echo      "<button class='alert-btn' id=alert-btn onclick='onclick_alert_close(this)'> close </button>";
 echo    "</div>";
 echo "</div>";
 
