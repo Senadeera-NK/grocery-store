@@ -180,11 +180,13 @@ echo    "<div class='cart-modal-content' id='cart-modal-content'>";
 echo      "<ul class='cart-items-block' id='cart-items-block'>";
 
 echo        "<li class='cart-item-block' id='cart-item-block'>";
-echo          "<img class='cart-item-img' src='vegetable.jpg'>";
-echo          "<p class='cart-item-name'></p>";
-echo          "<p class='cart-item-quantity'></p>";
-echo          "<p class='cart-item-price'></p>";
-echo          "<button class='cart-item-remove-btn' id='cart-item-remove-btn'>remove</button>";
+echo          "<ul class='cart-item-info'>";
+echo            "<li><img class='cart-item-img' src='vegetable.jpg'></li>";
+echo          "<li class='cart-item-name'>cucumbers</li>";
+echo          "<li class='cart-item-quantity'>9 <div class='item-amount-measurement'>kg</div></li>";
+echo          "<li class='cart-item-price'>Rs.100.00</li>";
+echo          "<li><img src='images/trash-bin.png' class='cart-item-remove-img' id='cart-item-remove-img'></li>";
+echo          "</ul>";
 echo        "</li>";
 
 echo      "</ul>";

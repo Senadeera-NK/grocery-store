@@ -337,7 +337,7 @@ form button{
   padding-left: 2rem;
   padding-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.826);
-  font-size: 20%;
+  font-size: 0.8rem;
   justify-content: center;
 }
 .cart-modal-content ul{
@@ -345,16 +345,29 @@ form button{
 }
 
 .cart-items-block {
-
+  width: auto;
+  height: auto;
+  float: left;
+  justify-content: center;
 }
 
 .cart-item-block {
-  width: 100%;
+  width: auto;
   height: auto;
   float: left;
+  left:0.5rem;
   margin: 0.5rem;
-  background-color: black;
+  background-color: grey;
 }
+.cart-item-block ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.cart-item-info li {
+  float: left;
+  padding: 0.1rem;
+}
+
 
 .cart-item-img {
 
@@ -375,12 +388,12 @@ form button{
   margin-top: 1rem;
 }
 
-.cart-item-remove-btn {
-  margin-top: 0.5rem;
-  margin-left: 2rem;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  width:4rem;
+.cart-item-remove-img {
+  /* margin-top: 0.5rem;
+  margin-left: 2rem; */
+  /* padding: 0.5rem;
+  font-size: 0.8rem; */
+  width:1.5rem;
 }
 
 
