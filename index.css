@@ -345,30 +345,32 @@ form button{
 }
 
 .cart-items-block {
-  width: auto;
-  height: auto;
-  float: left;
-  justify-content: center;
+  
 }
 
 .cart-item-block {
-  width: auto;
+  width: 100%;
   height: auto;
   float: left;
-  left:0.5rem;
-  margin: 0.5rem;
   background-color: grey;
+  overflow: hidden;
 }
 .cart-item-block ul {
   list-style-type: none;
   overflow: hidden;
 }
+.cart-item-info {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
 .cart-item-info li {
   float: left;
   padding: 0.1rem;
 }
-
-
+.cart-item-info img {
+  width: 1.5rem;
+}
 .cart-item-img {
 
 }
