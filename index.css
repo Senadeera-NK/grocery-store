@@ -357,10 +357,10 @@ form button{
 
 .cart-items-block ul{
   list-style-type: none;
-  margin-left: -2.5rem; 
 }
 
 .cart-items-block ul li{
+
 }
 
 .cart-item-block {
@@ -371,41 +371,46 @@ form button{
   font-size: 75%;
 }
 
-.cart-item-info ul{
+.cart-item-block ul{
   list-style-type: none;
 }
 
-.cart-item-info ul li{
+.cart-item-block ul li{
   display: inline-block;
-}
+  width: fit-content; /*fitting the lists' item length with the length of the content*/
+  margin-left:0.4rem;
+} 
 
 .cart-item-img {
   width: 3.5rem;
   height: auto;
+  margin-bottom: -0.5rem;
   border: 1px solid black;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 .cart-item-name {
   border: 1px solid black;
-  padding: 0;
-  width: 100%;
 
+  margin-top: -5rem;
 }
 .cart-item-quantity {
   border: 1px solid black;
-  padding: 0;
-
+  
 }
 .cart-item-price {
   border: 1px solid black;
-  padding: 0;
-
+ 
 }
 
 .cart-item-remove-img {
   border: 1px solid black;
   width: 1.5rem;
   height: auto;
-
+  float: right;
+  margin-bottom: -0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 /* --------- profile-modal styling -------- */
