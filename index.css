@@ -345,7 +345,7 @@ form button{
 }
 
 .cart-items-block {
-  
+ 
 }
 
 .cart-item-block {
@@ -358,6 +358,7 @@ form button{
 .cart-item-block ul {
   list-style-type: none;
   overflow: hidden;
+  margin: 0;
 }
 .cart-item-info {
   width: 100%;
@@ -366,13 +367,14 @@ form button{
 }
 .cart-item-info li {
   float: left;
-  padding: 0.1rem;
-}
-.cart-item-info img {
-  width: 1.5rem;
-}
-.cart-item-img {
+  margin: 0.2rem;
 
+}
+
+#cart-item-img {
+  width: 3.5rem;
+  height: 2.5rem;
+  margin: 0rem;
 }
 .cart-item-name {
 
@@ -396,6 +398,7 @@ form button{
   /* padding: 0.5rem;
   font-size: 0.8rem; */
   width:1.5rem;
+
 }
 
 
