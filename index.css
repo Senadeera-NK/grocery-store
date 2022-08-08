@@ -351,9 +351,8 @@ form button{
 .cart-item-block {
   width: 100%;
   height: auto;
-  float: left;
   background-color: grey;
-  overflow: hidden;
+  margin-right: 2rem;
 }
 .cart-item-block ul {
   list-style-type: none;
@@ -375,21 +374,20 @@ form button{
   width: 3.5rem;
   height: 2.5rem;
   margin: 0rem;
+  border: 1px solid black;
 }
 .cart-item-name {
-
+  margin-top: 2rem;
+  border: 1px solid black;
 }
 
 .cart-item-quantity {
+  border: 1px solid black;
 
 }
 
 .cart-item-price {
-
-}
-
-.cart-modal-content h2 {
-  margin-top: 1rem;
+  border: 1px solid black;
 }
 
 .cart-item-remove-img {
