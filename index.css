@@ -2,10 +2,16 @@
   box-sizing: border-box;
   margin: 0;
 }
+html,body {
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
 
 body{
   font-size:25px;
   margin:0;
+  padding:0;
 }
 
 /*-----header styling-----------*/
@@ -324,81 +330,83 @@ form button{
   left: 0;
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
+
 .cart-modal-content {
   border: 1px solid black;
   width: 25%;
   height: auto;
-  float: right;
   margin-right: 2%;
-  margin-left: 40%;
   margin-top: 3rem; 
+  float: right;
+  /* padding-left: 2rem;
   padding-left: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  background-color: rgba(255, 255, 255, 0.826);
-  font-size: 0.8rem;
-  justify-content: center;
+  padding-bottom: 2rem; */
+  background-color: white;
+  font-size: 100%;
 }
+/* ******* CALLING ALL LISTS IN "cart-modal-content" */
 .cart-modal-content ul{
   list-style-type: none;
+  margin-left: -2.5rem; 
 }
 
-.cart-items-block {
- 
+.cart-items-block {}
+
+.cart-items-block ul{
+  list-style-type: none;
+  margin-left: -2.5rem; 
+}
+
+.cart-items-block ul li{
 }
 
 .cart-item-block {
-  width: 100%;
-  height: auto;
-  background-color: grey;
-  margin-right: 2rem;
+  border: 2px solid black;
 }
-.cart-item-block ul {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-}
+
 .cart-item-info {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-.cart-item-info li {
-  float: left;
-  margin: 0.2rem;
-
+  font-size: 75%;
 }
 
-#cart-item-img {
+.cart-item-info ul{
+  list-style-type: none;
+}
+
+.cart-item-info ul li{
+  display: inline-block;
+}
+
+.cart-item-img {
   width: 3.5rem;
-  height: 2.5rem;
-  margin: 0rem;
+  height: auto;
   border: 1px solid black;
 }
 .cart-item-name {
-  margin-top: 2rem;
   border: 1px solid black;
-}
+  padding: 0;
+  width: 100%;
 
+}
 .cart-item-quantity {
   border: 1px solid black;
+  padding: 0;
 
 }
-
 .cart-item-price {
   border: 1px solid black;
+  padding: 0;
+
 }
 
 .cart-item-remove-img {
-  /* margin-top: 0.5rem;
-  margin-left: 2rem; */
-  /* padding: 0.5rem;
-  font-size: 0.8rem; */
-  width:1.5rem;
+  border: 1px solid black;
+  width: 1.5rem;
+  height: auto;
 
 }
-
 
 /* --------- profile-modal styling -------- */
 #profile-modal {

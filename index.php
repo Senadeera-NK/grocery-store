@@ -183,7 +183,7 @@ echo        "<li class='cart-item-block' id='cart-item-block'>";
 echo          "<ul class='cart-item-info'>";
 echo            "<li><img src='images/the_produce_department/vegetables/cucumbers.jpg' class='cart-item-img' id='cart-item-img'></li>";
 echo          "<li class='cart-item-name'>cucumbers</li>";
-echo          "<li class='cart-item-quantity'>9 <div class='item-amount-measurement'>kg</div></li>";
+echo          "<li class='cart-item-quantity'>9 <span class='item-amount-measurement'>kg</span></li>";
 echo          "<li class='cart-item-price'>Rs.100.00</li>";
 echo          "<li><img src='images/trash-bin.png' class='cart-item-remove-img' id='cart-item-remove-img'></li>";
 echo          "</ul>";
