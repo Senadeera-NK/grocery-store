@@ -352,12 +352,12 @@ form button{
 /* ******* CALLING ALL LISTS IN "cart-modal-content" */
 .cart-modal-content ul{
   list-style-type: none;
-  margin-left: -2.5rem; 
+  margin-left: -1.5rem;
 }
 
 .cart-items-block {
-  padding-left:-10%;
   border: 1px solid black;
+  padding-left:1.2rem;
 }
 
 .cart-items-block ul{
@@ -370,7 +370,7 @@ form button{
 
 .cart-item-block {
   border: 2px solid black;
-  width:85%;
+  width:100%;
 }
 
 .cart-item-info {
