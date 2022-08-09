@@ -371,6 +371,7 @@ form button{
   border: 2px solid black;
   width:90%;
   margin-left: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .cart-item-info {
