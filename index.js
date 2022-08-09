@@ -175,7 +175,9 @@ function user_found(name){
 var item_amount = document.getElementById('modal-amount');
 var item_name = document.getElementById('modal-item-name');
 var item_price_all = document.getElementById('modal-amount-price');
-var user_chosen_items_list = [];
+user_chosen_items_list = [];
+var res = "wewewewe";
+document.cookie = "res = "+res;
 
 
 function onclick_add_to_cart(element) {

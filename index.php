@@ -203,6 +203,9 @@ echo      "</ul>";
 echo    "</div>";
 echo "</div>";
 
+$we = $_COOKIE['name'];
+echo $we;
+
 
 //header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
     //function to invoke if the signin button has clicked
@@ -276,6 +279,5 @@ echo "</div>";
 
 <!-- including the footer of the website -->
 <?php
-
 include('footer.html');
 ?>
