@@ -356,7 +356,6 @@ form button{
 }
 
 .cart-items-block {
-  border: 1px solid black;
   padding-left:1.2rem;
 }
 
@@ -370,7 +369,8 @@ form button{
 
 .cart-item-block {
   border: 2px solid black;
-  width:100%;
+  width:90%;
+  margin-left: 1.2rem;
 }
 
 .cart-item-info {
@@ -396,6 +396,8 @@ form button{
   margin-bottom: -0.6rem;
   /* margin-top: 0.2rem;
   margin-bottom: 0.2rem; */
+  margin-left:-1rem;
+  margin-top: -2rem;
 }
 .cart-item-name {
   padding-right: 0.5rem;
@@ -411,6 +413,7 @@ form button{
   width: 1.5rem;
   height: auto;
   float: right;
+  margin-left: 1rem;
   margin-bottom: -0.6rem;
   /* margin-top: 0.2rem;
   margin-bottom: 0.2rem; */
