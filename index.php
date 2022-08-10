@@ -150,7 +150,7 @@ echo      "<div class = 'modal-description' id = 'modal-description'>";
 echo      "</div>";
 echo      "<div class= 'modal-amount-price' id='modal-amount-price'> </div>";
 echo      "<div class='modal-amount-measurement'>";
-echo        "<p> Amount <input type='number' id='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
+echo        "<p> Amount <input type='number' id='modal-amount' name='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
 echo      "</div>";
 echo      "<button id='add-cart-btn' class='add-cart-btn' name='add-cart-btn' onclick='onclick_add_to_cart(this)'>Add Cart</button>";
 echo    "</div>";
@@ -231,6 +231,62 @@ echo $we;
       else{
         //SQL statement to retrieve entered user's needed informations
         $SQL_user = "select user_id, user_name, user_password from users_department where user_name = '$username' && user_password = '$userpassword'";
+
+        //if the db has successfully invoked and SQL statement has been successfully executed..
+        if($result = mysqli_query($connection, $SQL_user)) {
+
+          //getting the no of rows that retreived after the execution
+          $result_rows = mysqli_num_rows($result);
+
+          //if there are no rows has been retreived, means that user doesnt exist in table
+          if ($result_rows == 0){
+            echo '<script type="text/JavaScript">user_not_exists();</script>';
+          }
+          //if rows exists
+          else{
+            //fetching the SQL's retrievedd data to an array
+            while($result_array = mysqli_fetch_array($result)){
+              //if the retrieved password does not match
+              if(!($result_array['user_password'] == $userpassword)){
+                echo '<script type="text/JavaScript">password_not_matched();</script>';
+              }
+              //if all data matched
+              else{
+                //getting those arrays needed data to SESSION array
+                $_SESSION['user_id'] = $result_array['user_id'];
+                $_SESSION['user_name'] = $result_array['user_name'];
+                $_SESSION['user_password'] = $result_array['user_password'];
+
+                //declaring new variables to the sessions's array items
+                $user_id = $_SESSION['user_id'];
+                $user_name = $_SESSION['user_name'];
+                $user_password = $_SESSION['user_password'];
+
+                //invoking the function that related to successfully signed in
+                echo "<script type='text/JavaScript'>user_found('$user_name');</script>";
+              }
+            }
+          }
+        }
+      }     
+    }
+
+    
+//header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
+    //function to invoke if the signin button has clicked
+    if (array_key_exists('add-cart-btn', $_POST)){
+
+      //getting textfields' user enter value using global variable 'POST', local variables
+      $item_amount = $_POST['modal-amount'];
+
+      //invoking a js function if the username field is empty
+      if (empty($item_amount)){
+        echo '<script type="text/JavaScript">empty_item_amount();</script>';
+      }
+      //if all fields are filled invoking several function as suitable
+      else{
+        //SQL statement to retrieve entered user's needed informations
+        $SQL_user = "insert into TABLE values('')";
 
         //if the db has successfully invoked and SQL statement has been successfully executed..
         if($result = mysqli_query($connection, $SQL_user)) {

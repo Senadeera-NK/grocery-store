@@ -175,6 +175,7 @@ function user_found(name){
 var item_amount = document.getElementById('modal-amount');
 var item_name = document.getElementById('modal-item-name');
 var item_price_all = document.getElementById('modal-amount-price');
+var item_img_src = document.getElementById('modal-img');
 user_chosen_items_list = [];
 var res = "wewewewe";
 document.cookie = "res = "+res;
@@ -192,7 +193,7 @@ function onclick_add_to_cart(element) {
   }
   var items_price = (parseFloat(item_price) * parseFloat(item_amount.value)).toFixed(2);
     console.log((items_price));
-    console.log('item name ='+item_name.innerHTML+", item price = "+item_price+" ,item amount ="+item_amount.value);
+    console.log('item name ='+item_name.innerHTML+", item price = "+item_price+" ,item amount ="+item_amount.value+" item img src="+item_img_src.src.value);
   chosen_item_data_list.push(item_name.innerHTML);
   chosen_item_data_list.push(item_amount.value);
   chosen_item_data_list.push(items_price);

@@ -314,3 +314,14 @@ VALUES ("s.a. nanduni kaveesha", "naksathaudage2000@gmail.com", "fbi0778593462")
 INSERT INTO users_department(user_name, user_password, user_mail)
 VALUES("nanduni kaveesha", "1234","nanduni1234@gmail.com");
 
+
+-- creating a table for shopping cart items for users
+CREATE TABLE user_shopping_items_department(
+  user_item_no int NOT NULL AUTO_INCREMENT,
+  user_id int NOT NULL,
+  item_image_src char(255) NOT NULL,
+  item_name char(255) NOT NULL,
+  item_quantity char(255) NOT NULL,
+  item_total_price char(255) NOT NULL,
+
+);
