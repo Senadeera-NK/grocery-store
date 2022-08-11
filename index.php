@@ -203,10 +203,6 @@ echo      "</ul>";
 echo    "</div>";
 echo "</div>";
 
-$we = $_COOKIE['name'];
-echo $we;
-
-
 //header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
     //function to invoke if the signin button has clicked
     if (array_key_exists('signin-btn', $_POST)){
@@ -271,61 +267,7 @@ echo $we;
       }     
     }
 
-    
-//header.php file functions, which related to form should include in here or else, only the header file loading without index.php main file
-    //function to invoke if the signin button has clicked
-    if (array_key_exists('add-cart-btn', $_POST)){
-
-      //getting textfields' user enter value using global variable 'POST', local variables
-      $item_amount = $_POST['modal-amount'];
-
-      //invoking a js function if the username field is empty
-      if (empty($item_amount)){
-        echo '<script type="text/JavaScript">empty_item_amount();</script>';
-      }
-      //if all fields are filled invoking several function as suitable
-      else{
-        //SQL statement to retrieve entered user's needed informations
-        $SQL_user = "insert into TABLE values('')";
-
-        //if the db has successfully invoked and SQL statement has been successfully executed..
-        if($result = mysqli_query($connection, $SQL_user)) {
-
-          //getting the no of rows that retreived after the execution
-          $result_rows = mysqli_num_rows($result);
-
-          //if there are no rows has been retreived, means that user doesnt exist in table
-          if ($result_rows == 0){
-            echo '<script type="text/JavaScript">user_not_exists();</script>';
-          }
-          //if rows exists
-          else{
-            //fetching the SQL's retrievedd data to an array
-            while($result_array = mysqli_fetch_array($result)){
-              //if the retrieved password does not match
-              if(!($result_array['user_password'] == $userpassword)){
-                echo '<script type="text/JavaScript">password_not_matched();</script>';
-              }
-              //if all data matched
-              else{
-                //getting those arrays needed data to SESSION array
-                $_SESSION['user_id'] = $result_array['user_id'];
-                $_SESSION['user_name'] = $result_array['user_name'];
-                $_SESSION['user_password'] = $result_array['user_password'];
-
-                //declaring new variables to the sessions's array items
-                $user_id = $_SESSION['user_id'];
-                $user_name = $_SESSION['user_name'];
-                $user_password = $_SESSION['user_password'];
-
-                //invoking the function that related to successfully signed in
-                echo "<script type='text/JavaScript'>user_found('$user_name');</script>";
-              }
-            }
-          }
-        }
-      }     
-    }
+// ****------ POST method of 'user shopping cart' should be included ----------//
     //alert boxes for errors
     include("alert-modal.php");
 
