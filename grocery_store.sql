@@ -298,8 +298,12 @@ CREATE TABLE the_health_beauty_department (
   PRIMARY KEY healthbeauty_id
 );
 
+-- adding descriptions and measuring types to health_beauty_department
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Crest 3d White is the seafood that available in our store almost all the time. So feel free to add to this toothpaste to your cart and buy it as you like cause like as always, we will make sure to check the quality and distribute you the best .Contact our health & beauty department manager - 0775654326 for more info",
+SET health_beauty_measurement = "packs"
+WHERE healthybeauty_name = 'Crest 3d White';
 
-Crest 3d White
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
