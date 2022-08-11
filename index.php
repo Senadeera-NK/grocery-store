@@ -277,5 +277,5 @@ echo "</div>";
 
 <!-- including the footer of the website -->
 <?php
-include('footer.html');
+include('footer.php');
 ?>
