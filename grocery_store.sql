@@ -299,6 +299,8 @@ CREATE TABLE the_health_beauty_department (
 );
 
 
+Crest 3d White
+
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
   user_id int NOT NULL AUTO_INCREMENT,
