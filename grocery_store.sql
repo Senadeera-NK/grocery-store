@@ -298,27 +298,104 @@ CREATE TABLE the_health_beauty_department (
   PRIMARY KEY healthbeauty_id
 );
 
--- adding descriptions and measuring types to health_beauty_department
+-- adding descriptions and measuring types to health_beauty_department --
 UPDATE the_health_beauty_department
-SET health_beauty_desc = "Crest 3d White is the seafood that available in our store almost all the time. So feel free to add to this toothpaste to your cart and buy it as you like cause like as always, we will make sure to check the quality and distribute you the best .Contact our health & beauty department manager - 0775654326 for more info",
-SET health_beauty_measurement = "packs"
-WHERE healthybeauty_name = 'Crest 3d White';
+SET health_beauty_desc = "Crest 3d White is the seafood that available in our store almost all the time. So feel free to add to this toothpaste to your cart and buy it as you like cause like as always, we will make sure to check the quality and distribute you the best .Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'Crest 3d White';
 
 UPDATE the_health_beauty_department
-SET health_beauty_desc = "Colgate is one of well known toothpase in our store. You can shop all different type of Colgate you needed if some type is not available currenlty please feel free to contact our health & beauty manager and inforom us. We will inform you when it will be available. and we will make sure to deliver it on time. Contact our health & beauty department manager - 0775654325 for more info",
-SET health_beauty_measurement = "ounces"
+SET health_beauty_measurement = "packets"
+WHERE healthbeauty_name = 'Crest 3d White';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Colgate is one of well known toothpase in our store. You can shop all different type of Colgate you needed if some type is not available currenlty please feel free to contact our health & beauty manager and inforom us. We will inform you when it will be available. and we will make sure to deliver it on time. Contact our health & beauty department manager - 0775654326 for more info"
 WHERE healthbeauty_name = 'Colgate';
 
 UPDATE the_health_beauty_department
-SET health_beauty_desc = "Crest Pro Health is one of well know toothpase in our shop. You can watch our live stream and judge the quality of the toothpaste and order the exact product by your own after contacting our health & beauty manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying .Contact our health & beauty department manager - 0775654325 for more info",
-SET health_beauty_measurement = "ounces"
+SET health_beauty_measurement = "packets"
+WHERE healthbeauty_name = 'Colgate';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Crest Pro Health is one of well know toothpase in our shop. You can watch our live stream and judge the quality of the toothpaste and order the exact product by your own after contacting our health & beauty manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying .Contact our health & beauty department manager - 0775654326 for more info"
 WHERE healthbeauty_name = 'Crest Pro Health';
 
 UPDATE the_health_beauty_department
-SET health_beauty_desc = "Himalaya Herbals Protective Sunscreen Lo is not a rare sunscreen to find in this country. happy to say that we are able to provide you this great product from our shop. We contribute these products from the best known Himalaya Herbals company worldwide. Please kindly make sure to contact our manager before ordering this product because of the least amount that we have currently. Contact our health & beauty department manager - 0775654325 for more info",
-SET health_beauty_measurement = "ml packets"
+SET health_beauty_measurement = "packets"
+WHERE healthbeauty_name = 'Crest Pro Health';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Himalaya Herbals Protective Sunscreen Lo is not a rare sunscreen to find in this country. happy to say that we are able to provide you this great product from our shop. We contribute these products from the best known Himalaya Herbals company worldwide. Please kindly make sure to contact our manager before ordering this product because of the least amount that we have currently. Contact our health & beauty department manager - 0775654326 for more info"
 WHERE healthbeauty_name = 'Himalaya Herbals Protective Sunscreen Lo';
 
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'Himalaya Herbals Protective Sunscreen Lo';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "The Derma Co Hyaluronic Sunscreen is very well known sunscreen worldwide, there's nosaying for that. but there are very few shops that you can buy the best products. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sunscreen product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'The Derma Co Hyaluronic Sunscreen';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'The Derma Co Hyaluronic Sunscreen';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "La Roche Posay Anthelios Sunscreen is very well known sunscreen worldwide, there's nosaying for that. but there are very few shops that you can buy the best products. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sunscreen product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'La Roche Posay Anthelios Sunscreen';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "packets"
+WHERE healthbeauty_name = 'La Roche Posay Anthelios Sunscreen';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Kai Bathing Bubbles is very well known bubble bath product worldwide. This product is one of the bubble bath product that has always selling as the best that has ever been provided by our shop. proud to say our shop is always providing this product always. Feel free to choose and buy the sunscreen product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info if needed"
+WHERE healthbeauty_name = 'Kai Bathing Bubbles';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'Kai Bathing Bubbles';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Deep Relax Bath & Shower Oil is one of well know bathing product in our shop. You can watch our live stream and judge the quality of the product if needed and order the exact product by your own after contacting our beauty & health manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying.Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'Deep Relax Bath & Shower Oil';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'Deep Relax Bath & Shower Oil';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Herbivore Botanicals Calm Bath Salts is very well known bathing product worldwide, there's nosaying for that. but there are alot of shops that you can buy this product online and offline. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always got the best feedbacks for the product also. Feel free to choose and buy the bathing product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'Herbivore Botanicals Calm Bath Salts';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'Herbivore Botanicals Calm Bath Salts';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Barbasol is very well known  bath product worldwide. This product is one of the bath product that has always selling as the best that has ever been provided by our shop. proud to say our shop is always providing this product always. Feel free to choose and buy the Barbasol product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info if needed"
+WHERE healthbeauty_name = 'Barbasol';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "bottles"
+WHERE healthbeauty_name = 'Barbasol';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Private Label is very well known product worldwide, there's nosaying for that. and there are alot of shops that you can buy this best products. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the  product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'Private Label';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "packets"
+WHERE healthbeauty_name = 'Private Label';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Gillette Razor Blades is very well known product worldwide, there's nosaying for that. and there are alot of shops that you can buy this best products. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the  product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE healthbeauty_name = 'Gillette Razor Blades';
+
+UPDATE the_health_beauty_department
+SET health_beauty_measurement = "packs"
+WHERE healthbeauty_name = 'Gillette Razor Blades';
+
+adding 
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
