@@ -395,7 +395,28 @@ UPDATE the_health_beauty_department
 SET health_beauty_measurement = "packs"
 WHERE healthbeauty_name = 'Gillette Razor Blades';
 
-adding 
+
+------ adding prepared_desc and prepared_measurement to the prepared_department ----
+Sandwiches - pieces
+Salads - plates
+Cut Fruits - plates
+Pizza - pizza
+Vegetable Trays - Trays
+Hotdogs - hotdogs
+Nachos - plates
+Popcorns - plates
+Hot Chocolates - cups
+Coffee - cups
+
+UPDATE the_prepared_department
+SET prepared_desc = "Sandwiches is very well known sunscreen worldwide, there's nosaying for that. but there are very few shops that you can buy the best products. And talking about these product's quality most shops have been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sunscreen product you needed, high quality guaranteed as always. Contact our health & beauty department manager - 0775654326 for more info"
+WHERE prepared_name = 'Sandwiches';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "pieces"
+WHERE prepared_name = 'Sandwiches';
+
+
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
