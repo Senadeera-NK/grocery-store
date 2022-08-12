@@ -304,6 +304,21 @@ SET health_beauty_desc = "Crest 3d White is the seafood that available in our st
 SET health_beauty_measurement = "packs"
 WHERE healthybeauty_name = 'Crest 3d White';
 
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Colgate is one of well known toothpase in our store. You can shop all different type of Colgate you needed if some type is not available currenlty please feel free to contact our health & beauty manager and inforom us. We will inform you when it will be available. and we will make sure to deliver it on time. Contact our health & beauty department manager - 0775654325 for more info",
+SET health_beauty_measurement = "ounces"
+WHERE healthbeauty_name = 'Colgate';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Crest Pro Health is one of well know toothpase in our shop. You can watch our live stream and judge the quality of the toothpaste and order the exact product by your own after contacting our health & beauty manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying .Contact our health & beauty department manager - 0775654325 for more info",
+SET health_beauty_measurement = "ounces"
+WHERE healthbeauty_name = 'Crest Pro Health';
+
+UPDATE the_health_beauty_department
+SET health_beauty_desc = "Himalaya Herbals Protective Sunscreen Lo is not a rare sunscreen to find in this country. happy to say that we are able to provide you this great product from our shop. We contribute these products from the best known Himalaya Herbals company worldwide. Please kindly make sure to contact our manager before ordering this product because of the least amount that we have currently. Contact our health & beauty department manager - 0775654325 for more info",
+SET health_beauty_measurement = "ml packets"
+WHERE healthbeauty_name = 'Himalaya Herbals Protective Sunscreen Lo';
+
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
