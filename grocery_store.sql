@@ -397,8 +397,6 @@ WHERE healthbeauty_name = 'Gillette Razor Blades';
 
 
 ------ adding prepared_desc and prepared_measurement to the prepared_department ----
-Vegetable Trays - Trays
-Hotdogs - hotdogs
 Nachos - plates
 Popcorns - plates
 Hot Chocolates - cups
@@ -438,12 +436,20 @@ SET prepared_measurement = "pizza"
 WHERE prepared_name = 'Pizza';
 
 UPDATE the_prepared_department
-SET prepared_desc = "Vegetable trays is  a very popular prepared food to find in this country. happy to say that we are able to provide you this great food from our shop. We contribute these products from the famous company worldwide. Please be kind enough to contact our manager if needed before ordering this product. Contact our prepared food department manager - 0775654327 for more info"
+SET prepared_desc = "Vegetable trays is  a very popular prepared food to find in this country. happy to say that we are able to provide you this great food from our shop. We contribute these products from the famous company worldwide. Please be kind enough to contact our manager if you needed your food from a specific company before ordering this product. Contact our prepared food department manager - 0775654327 for more info"
 WHERE prepared_name = 'Vegetable Trays';
 
 UPDATE the_prepared_department
 SET prepared_measurement = "trays"
 WHERE prepared_name = 'Vegetable Trays';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Hotdogs are very popular prepared food to find in this country. happy to say that we are able to provide you this famous fast food from our shop. We contribute these products from the famous company worldwide. Please be kind enough to contact our manager if you needed your food from a specific company before ordering the product. Contact our prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Hotdogs';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "hotdogs"
+WHERE prepared_name = 'Hotdogs';
 
 
 -- adding the users table into grocery_store
