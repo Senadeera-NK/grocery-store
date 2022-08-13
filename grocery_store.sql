@@ -397,7 +397,6 @@ WHERE healthbeauty_name = 'Gillette Razor Blades';
 
 
 ------ adding prepared_desc and prepared_measurement to the prepared_department ----
-
 Vegetable Trays - Trays
 Hotdogs - hotdogs
 Nachos - plates
@@ -406,7 +405,7 @@ Hot Chocolates - cups
 Coffee - cups
 
 UPDATE the_prepared_department
-SET prepared_desc = "Sandwiches is very well known prepared fast food, there's nosaying for that. and there are many shops that you can buy sandwiches online and offline. And talking about sandiwich's quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sandwiches you needed, high quality guaranteed as always. Contact our shop's prepared department manager - 0775654327 for more info"
+SET prepared_desc = "Sandwiches is very well known prepared fast food, there's nosaying for that. and there are many shops that you can buy sandwiches online and offline. And talking about sandiwich's quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sandwiches you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
 WHERE prepared_name = 'Sandwiches';
 
 UPDATE the_prepared_department
@@ -414,7 +413,7 @@ SET prepared_measurement = "sandwiches"
 WHERE prepared_name = 'Sandwiches';
 
 UPDATE the_prepared_department
-SET prepared_desc = "Salads is very well known prepared food, there's nosaying for that. and there are many shops that you can buy sandwiches online and offline. And talking about salads quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the salads plates you needed, high quality guaranteed as always. Contact our shop's prepared department manager - 0775654327 for more info"
+SET prepared_desc = "Salads is very well known prepared food, there's nosaying for that. and there are many shops that you can buy sandwiches online and offline. And talking about salads quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the salads plates you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
 WHERE prepared_name = 'Salads';
 
 UPDATE the_prepared_department
@@ -422,7 +421,7 @@ SET prepared_measurement = "plates"
 WHERE prepared_name = 'Salads';
 
 UPDATE the_prepared_department
-SET prepared_desc = "Cut fruits is very well known prepared food, our shop famous for. and there are many shops that you can buy cut fruits plates online and offline. And talking about fruits quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the cut fruits plates you needed, high quality guaranteed as always. Contact our shop's prepared department manager - 0775654327 for more info"
+SET prepared_desc = "Cut fruits is very well known prepared food, our shop famous for. and there are many shops that you can buy cut fruits plates online and offline. And talking about fruits quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the cut fruits plates you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
 WHERE prepared_name = 'Cut Fruits';
 
 UPDATE the_prepared_department
@@ -431,12 +430,20 @@ WHERE prepared_name = 'Cut Fruits';
 
 
 UPDATE the_prepared_department
-SET prepared_desc = "Pizza is one of well know fas prepared food in our shop. You can watch our live stream and judge the quality of our shop's pizza if needed and order the exact product by your own after contacting our prepared department manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying. Contact our prepared department manager - 0775654327 for more info"
+SET prepared_desc = "Pizza is one of well know fas prepared food in our shop. You can watch our live stream and judge the quality of our shop's pizza if needed and order the exact product by your own after contacting our prepared department manager. It is not necessary to follow before instructions you can also just order it and we will make sure to check the quality before deliverying. Contact our prepared food department manager - 0775654327 for more info"
 WHERE prepared_name = 'Pizza';
 
 UPDATE the_prepared_department
 SET prepared_measurement = "pizza"
 WHERE prepared_name = 'Pizza';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Vegetable trays is  a very popular prepared food to find in this country. happy to say that we are able to provide you this great food from our shop. We contribute these products from the famous company worldwide. Please be kind enough to contact our manager if needed before ordering this product. Contact our prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Vegetable Trays';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "trays"
+WHERE prepared_name = 'Vegetable Trays';
 
 
 -- adding the users table into grocery_store
