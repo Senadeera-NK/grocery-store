@@ -479,6 +479,54 @@ UPDATE the_prepared_department
 SET prepared_measurement = "cups"
 WHERE prepared_name = 'Coffee';
 
+-- changing the_produce_department's one columns name
+ALTER TABLE the_produce_department
+CHANGE COLUMN meat_measurement produce_measurement char(255);
+
+-- updating and inserting produce_measurement and produce_description to the_produce_department
+Carrots - kg
+Cucumbers - kg
+Papayas - kg
+Beatroots- kg
+Tomatos- kg
+Apples- kg
+Bananas- kg
+Oranges- kg
+Grapes- kg
+Mangos- kg
+broccoli- kg
+
+UPDATE the_produce_department
+SET produce_desc = "Carrots is very well known protein vegetable, there's nosaying for that. and there are many shops that you can buy carrots online and offline. And talking about vegetables quality our shop has been receiving high ranking for it. Quality matters always when shopping vegetables online. Feel free to choose and buy the amount of carrots you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Carrots';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Carrots';
+
+UPDATE the_produce_department
+SET produce_desc = "Cucumbers are a very popular, cooling vegetable in this country and also worldwide. happy to say that we are able to provide you this popular cucumbers from our shop. We contribute these cucumbers from the famous company worldwide. Please be kind enough to contact our manager if you needed your vegetables from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Cucumbers';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Cucumbers';
+
+UPDATE the_produce_department
+SET produce_desc = "Papayas is very well known protein vegetable, there's nosaying for that. and there are many shops that you can buy papayas  online and offline. And talking about vegetables quality our shop has been receiving high ranking for it. Quality matters always when shopping vegetables online. Feel free to choose and buy the amount of carrots you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Papayas';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Papayas';
+
+UPDATE the_produce_department
+SET produce_desc = "Beatroots are a very popular, vegetable in this country and also worldwide. happy to say that we are able to provide you this popular beatroots from our shop. We contribute these beatroots from the famous company worldwide. Please be kind enough to contact our manager if you needed your vegetables from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Beatroots';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Beatroots';
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
