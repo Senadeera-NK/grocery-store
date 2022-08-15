@@ -397,10 +397,6 @@ WHERE healthbeauty_name = 'Gillette Razor Blades';
 
 
 ------ adding prepared_desc and prepared_measurement to the prepared_department ----
-Nachos - plates
-Popcorns - plates
-Hot Chocolates - cups
-Coffee - cups
 
 UPDATE the_prepared_department
 SET prepared_desc = "Sandwiches is very well known prepared fast food, there's nosaying for that. and there are many shops that you can buy sandwiches online and offline. And talking about sandiwich's quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the sandwiches you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
@@ -450,6 +446,38 @@ WHERE prepared_name = 'Hotdogs';
 UPDATE the_prepared_department
 SET prepared_measurement = "hotdogs"
 WHERE prepared_name = 'Hotdogs';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Nachos is very well known prepared fast food, there's nosaying for that. and there are many shops that you can buy nachos online and offline. And talking about nachos quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the nachos you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Nachos';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "plates"
+WHERE prepared_name = 'Nachos';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Popcorns are a very popular, special fast food to find in this country. happy to say that we are able to provide you this fast snack from our shop. We contribute these products from the famous company worldwide. Please be kind enough to contact our manager if you needed your food from a specific company before ordering this product. Contact our prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Popcorns';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "plates"
+WHERE prepared_name = 'Popcorns';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Hot Chocolates is very well known prepared drink, there's nosaying for that. and there are many shops that you can buy hot chocolates online and offline. And talking about the drink's quality our shop has been receiving high ranking for it. proud to say that our shop has always been there. Feel free to choose and buy the drink you needed, high quality guaranteed as always. Contact our shop's prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Hot Chocolates';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "cups"
+WHERE prepared_name = 'Hot Chocolates';
+
+UPDATE the_prepared_department
+SET prepared_desc = "Coffee are a very popular, special drink in this country and also worldwide. happy to say that we are able to provide you this drink from our shop. We contribute these coffee cups from the famous company worldwide. Please be kind enough to contact our manager if you needed your food from a specific company before ordering this product. Contact our prepared food department manager - 0775654327 for more info"
+WHERE prepared_name = 'Coffee';
+
+UPDATE the_prepared_department
+SET prepared_measurement = "cups"
+WHERE prepared_name = 'Coffee';
 
 
 -- adding the users table into grocery_store
