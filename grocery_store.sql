@@ -576,11 +576,6 @@ SET produce_measurement = "kg"
 WHERE produce_name = 'Broccoli';
 
 -- adding descriptions and measurements to wine_and_beer_department --
-Budweiser - packs
-Guinness - bottles
-stella_artois - packs
-Heineken - packs
-Carlberg - packs
 
 UPDATE the_wine_beer_department
 SET wine_beer_desc = "Red Wine is very popular, wine in this country and also worldwide. happy to say that we are able to provide you this popular wine from our shop. We contribute these wines from the famous company worldwide. Please be kind enough to contact our manager if you needed your bottles from a specific company before ordering this product. Contact our wine, beer department manager - 0775654329 for more info"
@@ -622,6 +617,38 @@ UPDATE the_wine_beer_department
 SET wine_beer_measurement = "packs"
 WHERE winebeer_name = 'Budweiser';
 
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Guinness is very well known beer, there's nosaying for that. and there are many shops that you can buy this beer online and offline. And talking about beer's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Guinness';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'Guinness';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Stella Artois is very well known beer, there's nosaying for that. and there are many shops that you can buy this beer online and offline. And talking about beer's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Stella Artois';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "packs"
+WHERE winebeer_name = 'Stella Artois';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Heineken is very well known beer, there's nosaying for that. and there are many shops that you can buy this beer online and offline. And talking about beer's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Heineken';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "packs"
+WHERE winebeer_name = 'Heineken';
+
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Carlberg is very popular, beer in this country and also worldwide. happy to say that we are able to provide you this popular beer from our shop. We contribute this beer from the famous company worldwide. Please be kind enough to contact our manager if you needed your bottles from a specific company before ordering this product. Contact our wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Carlberg';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "packs"
+WHERE winebeer_name = 'Carlberg';
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
