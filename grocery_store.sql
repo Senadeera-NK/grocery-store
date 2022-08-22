@@ -484,17 +484,6 @@ ALTER TABLE the_produce_department
 CHANGE COLUMN meat_measurement produce_measurement char(255);
 
 -- updating and inserting produce_measurement and produce_description to the_produce_department
-Carrots - kg
-Cucumbers - kg
-Papayas - kg
-Beatroots- kg
-Tomatos- kg
-Apples- kg
-Bananas- kg
-Oranges- kg
-Grapes- kg
-Mangos- kg
-broccoli- kg
 
 UPDATE the_produce_department
 SET produce_desc = "Carrots is very well known protein vegetable, there's nosaying for that. and there are many shops that you can buy carrots online and offline. And talking about vegetables quality our shop has been receiving high ranking for it. Quality matters always when shopping vegetables online. Feel free to choose and buy the amount of carrots you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
@@ -527,6 +516,84 @@ WHERE produce_name = 'Beatroots';
 UPDATE the_produce_department
 SET produce_measurement = "kg"
 WHERE produce_name = 'Beatroots';
+
+UPDATE the_produce_department
+SET produce_desc = "Tomatos are very well known protein vegetable, there's nosaying for that. and there are many shops that you can buy tomatos online and offline. And talking about vegetables quality our shop has been receiving high ranking for it. Quality matters always when shopping vegetables online. Feel free to choose and buy the amount of tomatos you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Tomatos';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Tomatos';
+
+
+UPDATE the_produce_department
+SET produce_desc = "Apples are very well known protein fruit, there's nosaying for that. and there are many shops that you can buy apples online and offline. And talking about fruits quality our shop has been receiving high ranking for it. Quality matters always when shopping fruits online. Feel free to choose and buy the amount of apples you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Apples';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Apples';
+
+UPDATE the_produce_department
+SET produce_desc = "Bananas are a very popular, fruit in this country and also worldwide. happy to say that we are able to provide you this popular fruit from our shop. We contribute these bananas from the famous company worldwide. Please be kind enough to contact our manager if you needed your fruits from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Bananas';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Bananas';
+
+UPDATE the_produce_department
+SET produce_desc = "Oranges are a very popular, fruit in this country and also worldwide. happy to say that we are able to provide you this popular fruit from our shop. We contribute these oranges from the famous company worldwide. Please be kind enough to contact our manager if you needed your fruits from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Oranges';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Oranges';
+
+
+UPDATE the_produce_department
+SET produce_desc = "Grapes are very well known protein fruit, there's nosaying for that. and there are many shops that you can buy grapes online and offline. And talking about fruits quality our shop has been receiving high ranking for it. Quality matters always when shopping fruits online. Feel free to choose and buy the amount of grapes you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Grapes';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Grapes';
+
+UPDATE the_produce_department
+SET produce_desc = "Mangos are very well known protein fruit, there's nosaying for that. and there are many shops that you can buy mangos online and offline. And talking about fruits quality our shop has been receiving high ranking for it. Quality matters always when shopping fruits online. Feel free to choose and buy the amount of mangos you needed, high quality guaranteed as always. Contact our shop's produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Mangos';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Mangos';
+
+UPDATE the_produce_department
+SET produce_desc = "Broccoli are a very popular, vegetable in this country and also worldwide. happy to say that we are able to provide you this popular vegetable from our shop. We contribute these broccolies from the famous company worldwide. Please be kind enough to contact our manager if you needed your vegetables from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Broccoli';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Broccoli';
+
+-- adding descriptions and measurements to wine_and_beer_department --
+Red Wine - bottles
+White Wine - bottles
+Rose Wine - bottles
+Sparkling Wine - bottles
+Budweiser - packs
+Guinness - bottles
+stella_artois - packs
+Heineken - packs
+Carlberg - packs
+
+UPDATE the_wine_beer_department
+SET produce_desc = "Broccoli are a very popular, vegetable in this country and also worldwide. happy to say that we are able to provide you this popular vegetable from our shop. We contribute these broccolies from the famous company worldwide. Please be kind enough to contact our manager if you needed your vegetables from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
+WHERE produce_name = 'Broccoli';
+
+UPDATE the_produce_department
+SET produce_measurement = "kg"
+WHERE produce_name = 'Broccoli';
+
 
 -- adding the users table into grocery_store
 CREATE TABLE users_department (
