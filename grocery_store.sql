@@ -576,10 +576,6 @@ SET produce_measurement = "kg"
 WHERE produce_name = 'Broccoli';
 
 -- adding descriptions and measurements to wine_and_beer_department --
-Red Wine - bottles
-White Wine - bottles
-Rose Wine - bottles
-Sparkling Wine - bottles
 Budweiser - packs
 Guinness - bottles
 stella_artois - packs
@@ -587,12 +583,44 @@ Heineken - packs
 Carlberg - packs
 
 UPDATE the_wine_beer_department
-SET produce_desc = "Broccoli are a very popular, vegetable in this country and also worldwide. happy to say that we are able to provide you this popular vegetable from our shop. We contribute these broccolies from the famous company worldwide. Please be kind enough to contact our manager if you needed your vegetables from a specific company before ordering this product. Contact our produce department manager - 0775654328 for more info"
-WHERE produce_name = 'Broccoli';
+SET wine_beer_desc = "Red Wine is very popular, wine in this country and also worldwide. happy to say that we are able to provide you this popular wine from our shop. We contribute these wines from the famous company worldwide. Please be kind enough to contact our manager if you needed your bottles from a specific company before ordering this product. Contact our wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Red Wine';
 
-UPDATE the_produce_department
-SET produce_measurement = "kg"
-WHERE produce_name = 'Broccoli';
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'Red Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "White Wine is very popular, wine in this country and also worldwide. happy to say that we are able to provide you this popular wine from our shop. We contribute these wines from the famous company worldwide. Please be kind enough to contact our manager if you needed your bottles from a specific company before ordering this product. Contact our wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'White Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'White Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Rose Wine is very popular, wine in this country and also worldwide. happy to say that we are able to provide you this popular wine from our shop. We contribute these wines from the famous company worldwide. Please be kind enough to contact our manager if you needed your bottles from a specific company before ordering this product. Contact our wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Rose Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'Rose Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Sparkling Wine is very well known wine, there's nosaying for that. and there are many shops that you can buy this wine online and offline. And talking about wine's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Sparkling Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'Sparkling Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_desc = "Sparkling Wine is very well known wine, there's nosaying for that. and there are many shops that you can buy this wine online and offline. And talking about wine's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Sparkling Wine';
+
+UPDATE the_wine_beer_department
+SET wine_beer_measurement = "bottles"
+WHERE winebeer_name = 'Sparkling Wine';
 
 
 -- adding the users table into grocery_store
