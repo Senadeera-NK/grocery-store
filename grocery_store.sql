@@ -615,12 +615,12 @@ SET wine_beer_measurement = "bottles"
 WHERE winebeer_name = 'Sparkling Wine';
 
 UPDATE the_wine_beer_department
-SET wine_beer_desc = "Sparkling Wine is very well known wine, there's nosaying for that. and there are many shops that you can buy this wine online and offline. And talking about wine's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
-WHERE winebeer_name = 'Sparkling Wine';
+SET wine_beer_desc = "Budweiser is very well known beer, there's nosaying for that. and there are many shops that you can buy this beer online and offline. And talking about beer's quality our shop has been receiving high ranking for it. Quality matters always when shopping wines online. Feel free to choose and buy the amount of bottles you needed, high quality guaranteed as always. Contact our shop's wine, beer department manager - 0775654329 for more info"
+WHERE winebeer_name = 'Budweiser';
 
 UPDATE the_wine_beer_department
-SET wine_beer_measurement = "bottles"
-WHERE winebeer_name = 'Sparkling Wine';
+SET wine_beer_measurement = "packs"
+WHERE winebeer_name = 'Budweiser';
 
 
 -- adding the users table into grocery_store
