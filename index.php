@@ -174,18 +174,18 @@ include("header.php");
     //dcalring array's needed data to variables
     $item_id = $array_seafood['seafood_id'];
     $item_name = $array_seafood['seafood_name'];
-    $item_src = $array_meat['meat_path'];
-    $item_desc = $array_meat['meat_desc'];
-    $item_measurement = $array_meat['meat_measurement'];
-    $item_size = $array_meat['meat_size'];
-    $item_price = $array_meat['meat_price'];
+    $item_src = $array_seafood['seafood_path'];
+    $item_desc = $array_seafood['seafood_desc'];
+    $item_measurement = $array_seafood['seafood_measurement'];
+    $item_size = $array_seafood['seafood_size'];
+    $item_price = $array_seafood['seafood_price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_meat['meat_path'].">";
-         echo "<p class='gallery-item-name'>".$array_meat['meat_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_meat['meat_size']." "." = "." ".$array_meat['meat_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_seafood['seafood_path'].">";
+         echo "<p class='gallery-item-name'>".$array_seafood['seafood_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_seafood['seafood_size']." "." = "." ".$array_seafood['seafood_price']."</p>";
     echo "</div>";
   }
   echo "</div>";
