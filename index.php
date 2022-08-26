@@ -65,19 +65,32 @@ include("header.php");
   $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
   $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
   
-  echo "<h3 class='home-topics'>recently added</h3>";
+  echo "<h3 class='home-topics'>the produce department</h3>";
 
   echo "<div class = 'gallery-wrapper'>";
   echo "<img src='images/arrow.jpg' class='left' id = 'left1' alt='left'>";
   echo "<div class='gallery' id = 'gallery1'>";
   // getting all the items from mentioned sql
+  // getting all the items from mentioned sql
+
   while ($array_produce = mysqli_fetch_array($exeSQL_produce))
-  {
-    echo "<div class='gallery-item'>";
-         echo "<img src =".$array_produce['produce_path'].">";
-         echo "<p>".$array_produce['produce_name']."</p>";
-         echo "<p>".$array_produce['produce_size']." "." = "." ".$array_produce['produce_price']."</p>";
-     echo "</div>";
+  { 
+    //dcalring array's needed data to variables
+    $item_id = $array_produce['produce_id'];
+    $item_name = $array_produce['produce_name'];
+    $item_src = $array_produce['produce_path'];
+    $item_desc = $array_produce['produce_desc'];
+    $item_measurement = $array_produce['produce_measurement'];
+    $item_size = $array_produce['produce_size'];
+    $item_price = $array_produce['produce_price'];
+
+    //adding the js onclick function with those declared variable to output those as needed in the modal
+    echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
+  
+         echo "<img class='gallery-item-img' src =".$array_produce['produce_path'].">";
+         echo "<p class='gallery-item-name'>".$array_produce['produce_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_produce['produce_size']." "." = "." ".$array_produce['produce_price']."</p>";
+    echo "</div>";
   }
   echo "</div>";
   // right side arrow of the slider
