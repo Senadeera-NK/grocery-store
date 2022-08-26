@@ -48,20 +48,49 @@ leftbtn3.onclick = function () {
 };
 
 //getting the right button's ID to a variable in forth gallery
-var rightbtn3 = document.getElementById('right4');
-rightbtn3.onclick = function () {
+var rightbtn4 = document.getElementById('right4');
+rightbtn4.onclick = function () {
   var container = document.getElementById('gallery4');
   //adding the function to the button
   sideScroll(container, 'right', 25, 200, 10);
 };
-
-//getting the left button's ID to a variable in third gallery
-var leftbtn3 = document.getElementById('left4');
-leftbtn3.onclick = function () {
+//getting the left button's ID to a variable in forth gallery
+var leftbtn4 = document.getElementById('left4');
+leftbtn4.onclick = function () {
   var container = document.getElementById('gallery4');
   //adding the function to the button
   sideScroll(container, 'left', 25, 200, 10);
 };
+
+// //getting the right button's ID to a variable in fifth gallery
+// var rightbtn5 = document.getElementById('right5');
+// rightbtn5.onclick = function () {
+//   var container = document.getElementById('gallery5');
+//   //adding the function to the button
+//   sideScroll(container, 'right', 25, 200, 10);
+// };
+// //getting the left button's ID to a variable in fifth gallery
+// var leftbtn5 = document.getElementById('left5');
+// leftbtn5.onclick = function () {
+//   var container = document.getElementById('gallery5');
+//   //adding the function to the button
+//   sideScroll(container, 'left', 25, 200, 10);
+// };
+
+// //getting the right button's ID to a variable in sixth gallery
+// var rightbtn6 = document.getElementById('right6');
+// rightbtn6.onclick = function () {
+//   var container = document.getElementById('gallery6');
+//   //adding the function to the button
+//   sideScroll(container, 'right', 25, 200, 10);
+// };
+// //getting the left button's ID to a variable in sixth gallery
+// var leftbtn6 = document.getElementById('left6');
+// leftbtn6.onclick = function () {
+//   var container = document.getElementById('gallery6');
+//   //adding the function to the button
+//   sideScroll(container, 'left', 25, 200, 10);
+// };
 
 //the main function to slide the gallery to left or right
 function sideScroll(element, direction, speed, distance, step){
