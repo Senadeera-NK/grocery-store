@@ -71,7 +71,6 @@ include("header.php");
   echo "<img src='images/arrow.jpg' class='left' id = 'left1' alt='left'>";
   echo "<div class='gallery' id = 'gallery1'>";
   // getting all the items from mentioned sql
-  // getting all the items from mentioned sql
 
   while ($array_produce = mysqli_fetch_array($exeSQL_produce))
   { 
@@ -99,27 +98,40 @@ include("header.php");
 
   echo "<hr>";
 //----------2nd slider begins------------//
-  echo "<h3 class='home-topics'>you shopped</h3>";
+  echo "<h3 class='home-topics'>the prepared department</h3>";
   echo "<div class = 'gallery-wrapper'>";
   echo "<img src='images/arrow.jpg' class='left' id='left2' alt='left'>";
   echo "<div class='gallery' id = 'gallery2'>";
   // getting all the items from mentioned sql
-  while ($array_seafood = mysqli_fetch_array($exeSQL_seafood))
-  {
-    echo "<div class='gallery-item'>";
-         echo "<img src =".$array_seafood['seafood_path'].">";
-         echo "<p>".$array_seafood['seafood_name']."</p>";
-         echo "<p>".$array_seafood['seafood_size']." "." = "." ".$array_seafood['seafood_price']."</p>";
-     echo "</div>";
-  }
-  echo "</div>";
+ // getting all the items from mentioned sql
+
+ while ($array_prepared = mysqli_fetch_array($exeSQL_prepared))
+ { 
+   //dcalring array's needed data to variables
+   $item_id = $array_prepared['prepared_id'];
+   $item_name = $array_prepared['prepared_name'];
+   $item_src = $array_prepared['prepared_path'];
+   $item_desc = $array_prepared['prepared_desc'];
+   $item_measurement = $array_prepared['prepared_measurement'];
+   $item_size = $array_prepared['prepared_size'];
+   $item_price = $array_prepared['prepared_price'];
+
+   //adding the js onclick function with those declared variable to output those as needed in the modal
+   echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
+ 
+        echo "<img class='gallery-item-img' src =".$array_prepared['prepared_path'].">";
+        echo "<p class='gallery-item-name'>".$array_prepared['prepared_name']."</p>";
+        echo "<p class='gallery-item-size-rice'>".$array_prepared['prepared_size']." "." = "." ".$array_prepared['prepared_price']."</p>";
+   echo "</div>";
+ }
+ echo "</div>";
   // right side arrow of the slider
   echo "<img src='images/arrow.jpg' class='right' id ='right2' alt='right'>";
   echo "</div>";
 
   echo "<hr>";
   // ---------- 3rd slider begins-----------//
-  echo "<h3 class='home-topics'>the produce department</h3>";
+  echo "<h3 class='home-topics'>the meat department</h3>";
   echo "<div class = 'gallery-wrapper'>";
   echo "<img src='images/arrow.jpg' class='left' id='left3' alt='left'>";
   echo "<div class='gallery' id = 'gallery3'>";
@@ -147,6 +159,38 @@ include("header.php");
   echo "</div>";
   // right side arrow of the slider
   echo "<img src='images/arrow.jpg' class='right' id ='right3' alt='right'>";
+  echo "</div>";
+
+  echo "<hr>";
+  // ---------- 4th slider begins-----------//
+  echo "<h3 class='home-topics'>the seafood department</h3>";
+  echo "<div class = 'gallery-wrapper'>";
+  echo "<img src='images/arrow.jpg' class='left' id='left4 alt='left'>";
+  echo "<div class='gallery' id='gallery4'>";
+  // getting all the items from mentioned sql
+
+  while ($array_seafood = mysqli_fetch_array($exeSQL_seafood))
+  { 
+    //dcalring array's needed data to variables
+    $item_id = $array_seafood['seafood_id'];
+    $item_name = $array_seafood['seafood_name'];
+    $item_src = $array_meat['meat_path'];
+    $item_desc = $array_meat['meat_desc'];
+    $item_measurement = $array_meat['meat_measurement'];
+    $item_size = $array_meat['meat_size'];
+    $item_price = $array_meat['meat_price'];
+
+    //adding the js onclick function with those declared variable to output those as needed in the modal
+    echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
+  
+         echo "<img class='gallery-item-img' src =".$array_meat['meat_path'].">";
+         echo "<p class='gallery-item-name'>".$array_meat['meat_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_meat['meat_size']." "." = "." ".$array_meat['meat_price']."</p>";
+    echo "</div>";
+  }
+  echo "</div>";
+  // right side arrow of the slider
+  echo "<img src='images/arrow.jpg' class='right' id ='right4' alt='right'>";
   echo "</div>";
 
   //------The Modal for item-----------// 
