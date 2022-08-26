@@ -62,20 +62,20 @@ leftbtn4.onclick = function () {
   sideScroll(container, 'left', 25, 200, 10);
 };
 
-// //getting the right button's ID to a variable in fifth gallery
-// var rightbtn5 = document.getElementById('right5');
-// rightbtn5.onclick = function () {
-//   var container = document.getElementById('gallery5');
-//   //adding the function to the button
-//   sideScroll(container, 'right', 25, 200, 10);
-// };
-// //getting the left button's ID to a variable in fifth gallery
-// var leftbtn5 = document.getElementById('left5');
-// leftbtn5.onclick = function () {
-//   var container = document.getElementById('gallery5');
-//   //adding the function to the button
-//   sideScroll(container, 'left', 25, 200, 10);
-// };
+//getting the right button's ID to a variable in fifth gallery
+var rightbtn5 = document.getElementById('right5');
+rightbtn5.onclick = function () {
+  var container = document.getElementById('gallery5');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+//getting the left button's ID to a variable in fifth gallery
+var leftbtn5 = document.getElementById('left5');
+leftbtn5.onclick = function () {
+  var container = document.getElementById('gallery5');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
 
 // //getting the right button's ID to a variable in sixth gallery
 // var rightbtn6 = document.getElementById('right6');

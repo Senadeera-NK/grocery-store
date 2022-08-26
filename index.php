@@ -194,29 +194,29 @@ include("header.php");
   echo "</div>";
   // ---------- 4th slider ends-----------//
   // ---------- 5th slider begins-----------//
-  echo "<h3 class='home-topics'>the seafood department</h3>";
+  echo "<h3 class='home-topics'>the wine beer department</h3>";
   echo "<div class = 'gallery-wrapper'>";
   echo "<img src='images/arrow.jpg' class='left' id='left5' alt='left'>";
   echo "<div class='gallery' id='gallery5'>";
   // getting all the items from mentioned sql
 
-  while ($array_winebeer = mysqli_fetch_array($exeSQL_wine_beer))
+  while ($array_wine_beer = mysqli_fetch_array($exeSQL_wine_beer))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_winebeer['winebeer_id'];
-    $item_name = $array_winebeer['winebeer_name'];
-    $item_src = $array_winebeer['wine_beer_path'];
-    $item_desc = $array_winebeer['wine_beer_desc'];
-    $item_measurement = $array_winebeer['wine_beer_measurement'];
-    $item_size = $array_winebeer['wine_beer_size'];
-    $item_price = $array_winebeer['wine_beer_price'];
+    $item_id = $array_wine_beer['winebeer_id'];
+    $item_name = $array_wine_beer['winebeer_name'];
+    $item_src = $array_wine_beer['wine_beer_path'];
+    $item_desc = $array_wine_beer['wine_beer_desc'];
+    $item_measurement = $array_wine_beer['wine_beer_measurement'];
+    $item_size = $array_wine_beer['wine_beer_size'];
+    $item_price = $array_wine_beer['wine_beer_price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_winbeer['wine_beer_path'].">";
-         echo "<p class='gallery-item-name'>".$array_winebeer['winebeer_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_winebeer['wine_beer_size']." "." = "." ".$array_winebeer['wine_beer_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_wine_beer['wine_beer_path'].">";
+         echo "<p class='gallery-item-name'>".$array_wine_beer['winebeer_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_wine_beer['wine_beer_size']." "." = "." ".$array_wine_beer['wine_beer_price']."</p>";
     echo "</div>";
   }
   echo "</div>";
