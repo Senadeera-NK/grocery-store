@@ -193,6 +193,7 @@ include("header.php");
   echo "<img src='images/arrow.jpg' class='right' id ='right4' alt='right'>";
   echo "</div>";
   // ---------- 4th slider ends-----------//
+  echo "<hr>";
   // ---------- 5th slider begins-----------//
   echo "<h3 class='home-topics'>the wine beer department</h3>";
   echo "<div class = 'gallery-wrapper'>";
@@ -224,6 +225,38 @@ include("header.php");
   echo "<img src='images/arrow.jpg' class='right' id ='right5' alt='right'>";
   echo "</div>";
   // ---------- 5th slider ends-----------//
+  echo "<hr>";
+  // ---------- 6th slider begins-----------//
+  echo "<h3 class='home-topics'>the health & beauty department</h3>";
+  echo "<div class = 'gallery-wrapper'>";
+  echo "<img src='images/arrow.jpg' class='left' id='left6' alt='left'>";
+  echo "<div class='gallery' id='gallery6'>";
+  // getting all the items from mentioned sql
+
+  while ($array_health_beauty = mysqli_fetch_array($exeSQL_health_beauty))
+  { 
+    //dcalring array's needed data to variables
+    $item_id = $array_health_beauty['healthbeauty_id'];
+    $item_name = $array_health_beauty['healthbeauty_name'];
+    $item_src = $array_health_beauty['health_beauty_path'];
+    $item_desc = $array_health_beauty['health_beauty_desc'];
+    $item_measurement = $array_health_beauty['health_beauty_measurement'];
+    $item_size = $array_health_beauty['health_beauty_size'];
+    $item_price = $array_health_beauty['health_beauty_price'];
+
+    //adding the js onclick function with those declared variable to output those as needed in the modal
+    echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
+  
+         echo "<img class='gallery-item-img' src =".$array_health_beauty['health_beauty_path'].">";
+         echo "<p class='gallery-item-name'>".$array_health_beauty['healthbeauty_name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_health_beauty['health__beauty_size']." "." = "." ".$array_health_beauty['health_beauty_price']."</p>";
+    echo "</div>";
+  }
+  echo "</div>";
+  // right side arrow of the slider
+  echo "<img src='images/arrow.jpg' class='right' id ='right6' alt='right'>";
+  echo "</div>";
+  // ---------- 6th slider ends-----------//
 
   //------The Modal for item-----------// 
 echo "<div id='modal' class='modal'>";
