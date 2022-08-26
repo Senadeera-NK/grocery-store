@@ -47,6 +47,22 @@ leftbtn3.onclick = function () {
   sideScroll(container, 'left', 25, 200, 10);
 };
 
+//getting the right button's ID to a variable in forth gallery
+var rightbtn3 = document.getElementById('right4');
+rightbtn3.onclick = function () {
+  var container = document.getElementById('gallery4');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+
+//getting the left button's ID to a variable in third gallery
+var leftbtn3 = document.getElementById('left4');
+leftbtn3.onclick = function () {
+  var container = document.getElementById('gallery4');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
+
 //the main function to slide the gallery to left or right
 function sideScroll(element, direction, speed, distance, step){
   scrollAmount = 0;
