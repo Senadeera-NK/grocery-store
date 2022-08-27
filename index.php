@@ -249,7 +249,7 @@ include("header.php");
   
          echo "<img class='gallery-item-img' src =".$array_health_beauty['health_beauty_path'].">";
          echo "<p class='gallery-item-name'>".$array_health_beauty['healthbeauty_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_health_beauty['health__beauty_size']." "." = "." ".$array_health_beauty['health_beauty_price']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_health_beauty['health_beauty_size']." "." = "." ".$array_health_beauty['health_beauty_price']."</p>";
     echo "</div>";
   }
   echo "</div>";

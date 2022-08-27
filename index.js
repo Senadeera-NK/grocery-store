@@ -77,20 +77,20 @@ leftbtn5.onclick = function () {
   sideScroll(container, 'left', 25, 200, 10);
 };
 
-// //getting the right button's ID to a variable in sixth gallery
-// var rightbtn6 = document.getElementById('right6');
-// rightbtn6.onclick = function () {
-//   var container = document.getElementById('gallery6');
-//   //adding the function to the button
-//   sideScroll(container, 'right', 25, 200, 10);
-// };
-// //getting the left button's ID to a variable in sixth gallery
-// var leftbtn6 = document.getElementById('left6');
-// leftbtn6.onclick = function () {
-//   var container = document.getElementById('gallery6');
-//   //adding the function to the button
-//   sideScroll(container, 'left', 25, 200, 10);
-// };
+//getting the right button's ID to a variable in sixth gallery
+var rightbtn6 = document.getElementById('right6');
+rightbtn6.onclick = function () {
+  var container = document.getElementById('gallery6');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+//getting the left button's ID to a variable in sixth gallery
+var leftbtn6 = document.getElementById('left6');
+leftbtn6.onclick = function () {
+  var container = document.getElementById('gallery6');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
 
 //the main function to slide the gallery to left or right
 function sideScroll(element, direction, speed, distance, step){
