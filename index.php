@@ -48,7 +48,7 @@ include("header.php");
 </html>
 
 <?php 
-
+ echo "<section class='main-section' id='main-section'>";
 //creating sql variables and populating those with  sql statements to retrieve necessary data from the relevant db tables
   $sql_produce = "select produce_id, produce_type, produce_name, produce_size, produce_price, produce_path, produce_desc, produce_measurement from the_produce_department";
   $sql_meat = "select meat_id, meat_type, meat_name, meat_size, meat_price, meat_path, meat_desc, meat_measurement from the_meat_department";
@@ -257,6 +257,7 @@ include("header.php");
   echo "<img src='images/arrow.jpg' class='right' id ='right6' alt='right'>";
   echo "</div>";
   // ---------- 6th slider ends-----------//
+  echo "</section>";
 
   //------The Modal for item-----------// 
 echo "<div id='modal' class='modal'>";
