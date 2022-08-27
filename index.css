@@ -82,11 +82,17 @@ form input[type="search"]{
   height:2rem;
 }
 
-form button{
+form input[type="submit"]{
   margin-left: 15px;
   height:30px;
   width: 100px;
 }
+
+/* form button{
+  margin-left: 15px;
+  height:30px;
+  width: 100px;
+} */
 .row-1, .row-2{
   margin-top: 15px;
   border-bottom: 1px solid black;

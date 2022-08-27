@@ -31,7 +31,7 @@ include("header.php");
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <form action="get">
+  <form method="post" action="searched.php">
     <select name="store-sections" id="store-sections">
       <option class = "store-section-option" value="all">All</option>
       <option class = "store-section-option" value="Beer&Wine">The Beer & Wine Department</option>
@@ -42,7 +42,7 @@ include("header.php");
       <option class = "store-section-option" value="prepared">The Deli/Prepared Food Department</option>
     </select>
     <input type="search" name="search" id="search" placeholder="Search...">
-    <button type="submit">search</button>
+    <input type="submit" name="search-btn" onclick="searched_modal(this)" value="search">
   </form>
 </body>
 </html>
