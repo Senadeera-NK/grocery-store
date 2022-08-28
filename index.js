@@ -173,16 +173,17 @@ var searched_main_section = document.getElementById('searched-main-section');
 var department_option_value = document.getElementById('store-sections').value;
 var searched_textfield = document.getElementById('search');
 
-if (department_option_value == null){
-
-} 
-if (searched_textfield == null){
-
-}
-
 function searched_modal(element) {
-  main_section.style.display = "none";
-  searched_main_section.style.display = "block";
+  if (department_option_value == null){
+
+  } 
+  else if (searched_textfield == null){
+  
+  }
+  else {
+    main_section.style.display = "none";
+    searched_main_section.style.display = "block";
+  }
 }
 // --------------------- searched modal ENDS ---------------------//
 
