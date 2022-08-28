@@ -31,7 +31,7 @@ include("header.php");
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <form method="post" action="searched.php">
+  <form method="get" action="searched.php">
     <select name="store-sections" id="store-sections">
       <option class = "store-section-option" value="all">All</option>
       <option class = "store-section-option" value="Beer&Wine">The Beer & Wine Department</option>
@@ -48,6 +48,11 @@ include("header.php");
 </html>
 
 <?php 
+
+echo "<section class='searched-main-section' id='searched-main-section'>";
+ include("searched.php");  
+echo "</section>";
+
  echo "<section class='main-section' id='main-section'>";
 //creating sql variables and populating those with  sql statements to retrieve necessary data from the relevant db tables
   $sql_produce = "select produce_id, produce_type, produce_name, produce_size, produce_price, produce_path, produce_desc, produce_measurement from the_produce_department";

@@ -166,7 +166,12 @@ signin_close.onclick = function() {
   signin_modal.style.display = "none";
 
 }
+// ----------------------signin modal ENDS ----------------- //
+// --------------------- searched modal STARTS ------------------ //
+function searched_modal(element) {
 
+}
+// --------------------- searched modal ENDS ---------------------//
 
 //----------------------- signin btn in modal ----------------------------//
 function signin_btn_modal(element) {
