@@ -33,6 +33,7 @@ include("header.php");
 <body>
   <form method="get" action="searched.php">
     <select name="store-sections" id="store-sections">
+      <option class="store-section-option" selected disabled>select a department</option>
       <option class = "store-section-option" value="all">All</option>
       <option class = "store-section-option" value="Beer&Wine">The Beer & Wine Department</option>
       <option class = "store-section-option" value="produce">The Produce Department</option>

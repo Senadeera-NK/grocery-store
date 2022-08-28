@@ -534,10 +534,10 @@ form input[type="submit"]{
 
 /*--------------searched results related STARTS ---------------*/
 #searched-main-section {
-display:none;
+  display:none;
 }
 #main-section{
-
+  display: block;
 }
 /*--------------searched results related ENDS ----------------*/
 
