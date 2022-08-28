@@ -171,16 +171,21 @@ signin_close.onclick = function() {
 var main_section = document.getElementById('main-section');
 var searched_main_section = document.getElementById('searched-main-section');
 var department_option_value = document.getElementById('store-sections').value;
-var searched_textfield = document.getElementById('search');
+var searched_textfield = document.getElementById('search').value;
+
+console.log(department_option_value);
+console.log(searched_textfield);
 
 function searched_modal(element) {
-  if (department_option_value == null){
-
+  if (department_option_value == "select a department"){
+    alert_box_popup("select an option !!!");
   } 
-  else if (searched_textfield == null){
-  
+  else if (searched_textfield == " "){
+    alert_box_popup("enter text on search !!!");
   }
   else {
+    console.log(department_option_value);
+    console.log(searched_textfield);
     main_section.style.display = "none";
     searched_main_section.style.display = "block";
   }
