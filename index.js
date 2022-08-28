@@ -168,8 +168,12 @@ signin_close.onclick = function() {
 }
 // ----------------------signin modal ENDS ----------------- //
 // --------------------- searched modal STARTS ------------------ //
-function searched_modal(element) {
+var main_section = document.getElementById('main-section');
+var searched_main_section = document.getElementById('searched-main-section');
 
+function searched_modal(element) {
+  main_section.style.display = "none";
+  searched_main_section.style.display = "block";
 }
 // --------------------- searched modal ENDS ---------------------//
 
