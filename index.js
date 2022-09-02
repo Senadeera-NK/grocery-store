@@ -289,6 +289,7 @@ var alert_modal = document.getElementsById('alert-modal');
 function alert_box_popup(txt){
   document.getElementById('alert-modal-msg').innerHTML = txt;
   alert_modal.style.display = "block";
+  console.log("alert box")
 }
 
 // ---- declaring a function for 'close' button in alert modal -----//
