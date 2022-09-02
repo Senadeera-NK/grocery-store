@@ -281,7 +281,6 @@ function onclick_shopping_cart(element) {
   cart_modal.style.display = "block";
   }
 
-
 // ---------------- cart modal functions ENDS ---------------------------//
 
 // ---------------- alert modal function STARTS --------------------------//
@@ -302,9 +301,8 @@ alert_modal_close.onclick = function() {
   //stop displaying the alert modal
   alert_modal.style.display = "none";
 }
+
 // ----------------- alert modal function ENDS ---------------------------//
-
-
 
 
 // ----------- close button for modals(x) STARTS -----------------//
