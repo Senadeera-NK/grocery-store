@@ -285,7 +285,7 @@ function onclick_shopping_cart(element) {
 // ---------------- cart modal functions ENDS ---------------------------//
 
 // ---------------- alert modal function STARTS --------------------------//
-var alert_modal = document.getElementById('alert-modal');
+var alert_modal = document.getElementsById('alert-modal');
 function alert_box_popup(txt){
   document.getElementById('alert-modal-msg').innerHTML = txt;
   alert_modal.style.display = "block";
