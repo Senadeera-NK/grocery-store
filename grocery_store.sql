@@ -708,3 +708,33 @@ CHANGE COLUMN prepared_price `price` varchar(255),
 CHANGE COLUMN prepared_path `path` varchar(255),
 CHANGE COLUMN prepared_desc `desc` LONGTEXT,
 CHANGE COLUMN prepared_measurement `measurement` char(255);
+
+ALTER TABLE the_produce_department
+CHANGE COLUMN produce_id `id` int(255) AUTO_INCREMENT,
+CHANGE COLUMN produce_name `name` varchar(255),
+CHANGE COLUMN produce_type `type` varchar(255),
+CHANGE COLUMN produce_size `size` varchar(255),
+CHANGE COLUMN produce_price `price` varchar(255),
+CHANGE COLUMN produce_path `path` varchar(255),
+CHANGE COLUMN produce_desc `desc` LONGTEXT,
+CHANGE COLUMN produce_measurement `measurement` char(255);
+
+ALTER TABLE the_seafood_department
+CHANGE COLUMN seafood_id `id` int(255) AUTO_INCREMENT,
+CHANGE COLUMN seafood_name `name` varchar(255),
+CHANGE COLUMN seafood_type `type` varchar(255),
+CHANGE COLUMN seafood_size `size` varchar(255),
+CHANGE COLUMN seafood_price `price` varchar(255),
+CHANGE COLUMN seafood_path `path` varchar(255),
+CHANGE COLUMN seafood_desc `desc` LONGTEXT,
+CHANGE COLUMN seafood_measurement `measurement` char(255);
+
+ALTER TABLE the_wine_beer_department
+CHANGE COLUMN winebeer_id `id` int(255) AUTO_INCREMENT,
+CHANGE COLUMN winebeer_name `name` varchar(255),
+CHANGE COLUMN winebeer_type `type` varchar(255),
+CHANGE COLUMN wine_beer_size `size` varchar(255),
+CHANGE COLUMN wine_beer_price `price` varchar(255),
+CHANGE COLUMN wine_beer_path `path` varchar(255),
+CHANGE COLUMN wine_beer_desc `desc` LONGTEXT,
+CHANGE COLUMN wine_beer_measurement `measurement` char(255);
