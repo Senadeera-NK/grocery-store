@@ -678,3 +678,32 @@ CREATE TABLE users_cart_item_department (
     FOREIGN KEY (user_id) REFERENCES users_department(user_id)
 );
 
+-- changing columns names in every table
+ALTER TABLE the_health_beauty_department
+CHANGE COLUMN healthbeauty_name `name` varchar(255),
+CHANGE COLUMN healthbeauty_type `type` varchar(255),
+CHANGE COLUMN health_beauty_size `size` varchar(255),
+CHANGE COLUMN health_beauty_price `price` varchar(255),
+CHANGE COLUMN health_beauty_path `path` varchar(255),
+CHANGE COLUMN health_beauty_desc `desc` LONGTEXT,
+CHANGE COLUMN health_beauty_measurement `measurement` char(255);
+
+ALTER TABLE the_meat_department
+CHANGE COLUMN meat_id `id` int(255),
+CHANGE COLUMN meat_name `name` varchar(255),
+CHANGE COLUMN meat_type `type` varchar(255),
+CHANGE COLUMN meat_size `size` varchar(255),
+CHANGE COLUMN meat_price `price` varchar(255),
+CHANGE COLUMN meat_path `path` varchar(255),
+CHANGE COLUMN meat_desc `desc` LONGTEXT,
+CHANGE COLUMN meat_measurement `measurement` char(255);
+
+ALTER TABLE the_meat_department
+CHANGE COLUMN meat_id `id` int(255),
+CHANGE COLUMN meat_name `name` varchar(255),
+CHANGE COLUMN meat_type `type` varchar(255),
+CHANGE COLUMN meat_size `size` varchar(255),
+CHANGE COLUMN meat_price `price` varchar(255),
+CHANGE COLUMN meat_path `path` varchar(255),
+CHANGE COLUMN meat_desc `desc` LONGTEXT,
+CHANGE COLUMN meat_measurement `measurement` char(255);
