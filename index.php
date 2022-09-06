@@ -81,20 +81,20 @@ echo "</section>";
   while ($array_produce = mysqli_fetch_array($exeSQL_produce))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_produce['produce_id'];
-    $item_name = $array_produce['produce_name'];
-    $item_src = $array_produce['produce_path'];
-    $item_desc = $array_produce['produce_desc'];
-    $item_measurement = $array_produce['produce_measurement'];
-    $item_size = $array_produce['produce_size'];
-    $item_price = $array_produce['produce_price'];
+    $item_id = $array_produce['id'];
+    $item_name = $array_produce['name'];
+    $item_src = $array_produce['path'];
+    $item_desc = $array_produce['desc'];
+    $item_measurement = $array_produce['measurement'];
+    $item_size = $array_produce['size'];
+    $item_price = $array_produce['price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_produce['produce_path'].">";
-         echo "<p class='gallery-item-name'>".$array_produce['produce_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_produce['produce_size']." "." = "." ".$array_produce['produce_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_produce['path'].">";
+         echo "<p class='gallery-item-name'>".$array_produce['name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_produce['size']." "." = "." ".$array_produce['price']."</p>";
     echo "</div>";
   }
   echo "</div>";
@@ -114,20 +114,20 @@ echo "</section>";
  while ($array_prepared = mysqli_fetch_array($exeSQL_prepared))
  { 
    //dcalring array's needed data to variables
-   $item_id = $array_prepared['prepared_id'];
-   $item_name = $array_prepared['prepared_name'];
-   $item_src = $array_prepared['prepared_path'];
-   $item_desc = $array_prepared['prepared_desc'];
-   $item_measurement = $array_prepared['prepared_measurement'];
-   $item_size = $array_prepared['prepared_size'];
-   $item_price = $array_prepared['prepared_price'];
+   $item_id = $array_prepared['id'];
+   $item_name = $array_prepared['name'];
+   $item_src = $array_prepared['path'];
+   $item_desc = $array_prepared['desc'];
+   $item_measurement = $array_prepared['measurement'];
+   $item_size = $array_prepared['size'];
+   $item_price = $array_prepared['price'];
 
    //adding the js onclick function with those declared variable to output those as needed in the modal
    echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
  
-        echo "<img class='gallery-item-img' src =".$array_prepared['prepared_path'].">";
-        echo "<p class='gallery-item-name'>".$array_prepared['prepared_name']."</p>";
-        echo "<p class='gallery-item-size-rice'>".$array_prepared['prepared_size']." "." = "." ".$array_prepared['prepared_price']."</p>";
+        echo "<img class='gallery-item-img' src =".$array_prepared['path'].">";
+        echo "<p class='gallery-item-name'>".$array_prepared['name']."</p>";
+        echo "<p class='gallery-item-size-rice'>".$array_prepared['size']." "." = "." ".$array_prepared['price']."</p>";
    echo "</div>";
  }
  echo "</div>";
@@ -146,20 +146,20 @@ echo "</section>";
   while ($array_meat = mysqli_fetch_array($exeSQL_meat))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_meat['meat_id'];
-    $item_name = $array_meat['meat_name'];
-    $item_src = $array_meat['meat_path'];
-    $item_desc = $array_meat['meat_desc'];
-    $item_measurement = $array_meat['meat_measurement'];
-    $item_size = $array_meat['meat_size'];
-    $item_price = $array_meat['meat_price'];
+    $item_id = $array_meat['id'];
+    $item_name = $array_meat['name'];
+    $item_src = $array_meat['path'];
+    $item_desc = $array_meat['desc'];
+    $item_measurement = $array_meat['measurement'];
+    $item_size = $array_meat['size'];
+    $item_price = $array_meat['price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_meat['meat_path'].">";
-         echo "<p class='gallery-item-name'>".$array_meat['meat_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_meat['meat_size']." "." = "." ".$array_meat['meat_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_meat['path'].">";
+         echo "<p class='gallery-item-name'>".$array_meat['name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_meat['size']." "." = "." ".$array_meat['price']."</p>";
     echo "</div>";
   }
   echo "</div>";
@@ -178,20 +178,20 @@ echo "</section>";
   while ($array_seafood = mysqli_fetch_array($exeSQL_seafood))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_seafood['seafood_id'];
-    $item_name = $array_seafood['seafood_name'];
-    $item_src = $array_seafood['seafood_path'];
-    $item_desc = $array_seafood['seafood_desc'];
-    $item_measurement = $array_seafood['seafood_measurement'];
-    $item_size = $array_seafood['seafood_size'];
-    $item_price = $array_seafood['seafood_price'];
+    $item_id = $array_seafood['id'];
+    $item_name = $array_seafood['name'];
+    $item_src = $array_seafood['path'];
+    $item_desc = $array_seafood['desc'];
+    $item_measurement = $array_seafood['measurement'];
+    $item_size = $array_seafood['size'];
+    $item_price = $array_seafood['price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_seafood['seafood_path'].">";
-         echo "<p class='gallery-item-name'>".$array_seafood['seafood_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_seafood['seafood_size']." "." = "." ".$array_seafood['seafood_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_seafood['path'].">";
+         echo "<p class='gallery-item-name'>".$array_seafood['name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_seafood['size']." "." = "." ".$array_seafood['price']."</p>";
     echo "</div>";
   }
   echo "</div>";
