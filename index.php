@@ -210,20 +210,20 @@ echo "</section>";
   while ($array_wine_beer = mysqli_fetch_array($exeSQL_wine_beer))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_wine_beer['winebeer_id'];
-    $item_name = $array_wine_beer['winebeer_name'];
-    $item_src = $array_wine_beer['wine_beer_path'];
-    $item_desc = $array_wine_beer['wine_beer_desc'];
-    $item_measurement = $array_wine_beer['wine_beer_measurement'];
-    $item_size = $array_wine_beer['wine_beer_size'];
-    $item_price = $array_wine_beer['wine_beer_price'];
+    $item_id = $array_wine_beer['id'];
+    $item_name = $array_wine_beer['name'];
+    $item_src = $array_wine_beer['path'];
+    $item_desc = $array_wine_beer['desc'];
+    $item_measurement = $array_wine_beer['measurement'];
+    $item_size = $array_wine_beer['size'];
+    $item_price = $array_wine_beer['price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_wine_beer['wine_beer_path'].">";
-         echo "<p class='gallery-item-name'>".$array_wine_beer['winebeer_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_wine_beer['wine_beer_size']." "." = "." ".$array_wine_beer['wine_beer_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_wine_beer['path'].">";
+         echo "<p class='gallery-item-name'>".$array_wine_beer['name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_wine_beer['size']." "." = "." ".$array_wine_beer['price']."</p>";
     echo "</div>";
   }
   echo "</div>";
@@ -242,20 +242,20 @@ echo "</section>";
   while ($array_health_beauty = mysqli_fetch_array($exeSQL_health_beauty))
   { 
     //dcalring array's needed data to variables
-    $item_id = $array_health_beauty['healthbeauty_id'];
-    $item_name = $array_health_beauty['healthbeauty_name'];
-    $item_src = $array_health_beauty['health_beauty_path'];
-    $item_desc = $array_health_beauty['health_beauty_desc'];
-    $item_measurement = $array_health_beauty['health_beauty_measurement'];
-    $item_size = $array_health_beauty['health_beauty_size'];
-    $item_price = $array_health_beauty['health_beauty_price'];
+    $item_id = $array_health_beauty['id'];
+    $item_name = $array_health_beauty['name'];
+    $item_src = $array_health_beauty['path'];
+    $item_desc = $array_health_beauty['desc'];
+    $item_measurement = $array_health_beauty['measurement'];
+    $item_size = $array_health_beauty['size'];
+    $item_price = $array_health_beauty['price'];
 
     //adding the js onclick function with those declared variable to output those as needed in the modal
     echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
   
-         echo "<img class='gallery-item-img' src =".$array_health_beauty['health_beauty_path'].">";
-         echo "<p class='gallery-item-name'>".$array_health_beauty['healthbeauty_name']."</p>";
-         echo "<p class='gallery-item-size-rice'>".$array_health_beauty['health_beauty_size']." "." = "." ".$array_health_beauty['health_beauty_price']."</p>";
+         echo "<img class='gallery-item-img' src =".$array_health_beauty['path'].">";
+         echo "<p class='gallery-item-name'>".$array_health_beauty['name']."</p>";
+         echo "<p class='gallery-item-size-rice'>".$array_health_beauty['size']." "." = "." ".$array_health_beauty['price']."</p>";
     echo "</div>";
   }
   echo "</div>";
