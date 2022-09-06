@@ -21,12 +21,12 @@ include("header.php");
   $user_option = $_POST['store-sections'];
   $search_item = $_POST['search'];
 
-  $sql_produce = "select produce_id, produce_type, produce_name, produce_size, produce_price, produce_path, produce_desc, produce_measurement from the_produce_department";
-  $sql_meat = "select meat_id, meat_type, meat_name, meat_size, meat_price, meat_path, meat_desc, meat_measurement from the_meat_department";
-  $sql_seafood = "select seafood_id, seafood_type, seafood_name, seafood_size, seafood_price, seafood_path, seafood_desc, seafood_measurement from the_seafood_department";
-  $sql_prepared = "select prepared_id, prepared_type, prepared_name, prepared_size, prepared_price, prepared_path, prepared_desc, prepared_measurement from the_prepared_department";
-  $sql_wine_beer = "select winebeer_id, winebeer_type, winebeer_name, wine_beer_size, wine_beer_price, wine_beer_path, wine_beer_desc, wine_beer_measurement from the_wine_beer_department";
-  $sql_health_beauty = "select healthbeauty_id, healthbeauty_type, healthbeauty_name, health_beauty_size, health_beauty_price, health_beauty_path, health_beauty_desc, health_beauty_measurement from the_health_beauty_department";
+  $sql_produce = "select id, type, name, size, price, path, desc, measurement from the_produce_department";
+  $sql_meat = "select id, type, name, size, price, path, desc, measurement from the_meat_department";
+  $sql_seafood = "select id, type, name, size, price, path, desc, measurement from the_seafood_department";
+  $sql_prepared = "select id, type, name, size, price, path, desc, measurement from the_prepared_department";
+  $sql_wine_beer = "select id, type, name, size, price, path, desc, measurement from the_wine_beer_department";
+  $sql_health_beauty = "select id, type, name, size, price, path, desc, measurement from the_health_beauty_department";
 
   //executing those created sql statements and checking the db connection,if it's not connected succesfully it'll show an error message
   $exeSQL_produce = mysqli_query($connection, $sql_produce) or die(mysqli_error($connection));
@@ -70,20 +70,20 @@ include("header.php");
     while ($array_option = mysqli_fetch_array($exeSQL_option))
     { 
       //dcalring array's needed data to variables
-      $item_id = $array_option['healthbeauty_id'];
-      $item_name = $array_option['healthbeauty_name'];
-      $item_src = $array_option['health_beauty_path'];
-      $item_desc = $array_option['health_beauty_desc'];
-      $item_measurement = $array_option['health_beauty_measurement'];
-      $item_size = $array_option['health_beauty_size'];
-      $item_price = $array_option['health_beauty_price'];
+      $item_id = $array_option['id'];
+      $item_name = $array_option['name'];
+      $item_src = $array_option['path'];
+      $item_desc = $array_option['desc'];
+      $item_measurement = $array_option['measurement'];
+      $item_size = $array_option['size'];
+      $item_price = $array_option['price'];
   
       //adding the js onclick function with those declared variable to output those as needed in the modal
       echo "<div class='gallery-item' onclick='onClick(this, \"$item_src\", \"$item_name\", \"$item_desc\", \"$item_size\", \"$item_price\", \"$item_measurement\")' >";
     
-           echo "<img class='gallery-item-img' src =".$array_health_beauty['health_beauty_path'].">";
-           echo "<p class='gallery-item-name'>".$array_health_beauty['healthbeauty_name']."</p>";
-           echo "<p class='gallery-item-size-rice'>".$array_health_beauty['health_beauty_size']." "." = "." ".$array_health_beauty['health_beauty_price']."</p>";
+           echo "<img class='gallery-item-img' src =".$array_option['path'].">";
+           echo "<p class='gallery-item-name'>".$array_option['name']."</p>";
+           echo "<p class='gallery-item-size-rice'>".$array_option['size']." "." = "." ".$array_option['price']."</p>";
       echo "</div>";
     }
     echo "</div>";
