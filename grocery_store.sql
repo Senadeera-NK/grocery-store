@@ -680,6 +680,7 @@ CREATE TABLE users_cart_item_department (
 
 -- changing columns names in every table
 ALTER TABLE the_health_beauty_department
+CHANGE COLUMN id `id` int(255) AUTO_INCREMENT,
 CHANGE COLUMN healthbeauty_name `name` varchar(255),
 CHANGE COLUMN healthbeauty_type `type` varchar(255),
 CHANGE COLUMN health_beauty_size `size` varchar(255),
@@ -689,7 +690,7 @@ CHANGE COLUMN health_beauty_desc `desc` LONGTEXT,
 CHANGE COLUMN health_beauty_measurement `measurement` char(255);
 
 ALTER TABLE the_meat_department
-CHANGE COLUMN meat_id `id` int(255),
+CHANGE COLUMN meat_id `id` int(255) AUTO_INCREMENT,
 CHANGE COLUMN meat_name `name` varchar(255),
 CHANGE COLUMN meat_type `type` varchar(255),
 CHANGE COLUMN meat_size `size` varchar(255),
@@ -698,12 +699,12 @@ CHANGE COLUMN meat_path `path` varchar(255),
 CHANGE COLUMN meat_desc `desc` LONGTEXT,
 CHANGE COLUMN meat_measurement `measurement` char(255);
 
-ALTER TABLE the_meat_department
-CHANGE COLUMN meat_id `id` int(255),
-CHANGE COLUMN meat_name `name` varchar(255),
-CHANGE COLUMN meat_type `type` varchar(255),
-CHANGE COLUMN meat_size `size` varchar(255),
-CHANGE COLUMN meat_price `price` varchar(255),
-CHANGE COLUMN meat_path `path` varchar(255),
-CHANGE COLUMN meat_desc `desc` LONGTEXT,
-CHANGE COLUMN meat_measurement `measurement` char(255);
+ALTER TABLE the_prepared_department
+CHANGE COLUMN prepared_id `id` int(255) AUTO_INCREMENT,
+CHANGE COLUMN prepared_name `name` varchar(255),
+CHANGE COLUMN prepared_type `type` varchar(255),
+CHANGE COLUMN prepared_size `size` varchar(255),
+CHANGE COLUMN prepared_price `price` varchar(255),
+CHANGE COLUMN prepared_path `path` varchar(255),
+CHANGE COLUMN prepared_desc `desc` LONGTEXT,
+CHANGE COLUMN prepared_measurement `measurement` char(255);
