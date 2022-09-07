@@ -56,12 +56,12 @@ echo "</section>";
 
  echo "<section class='main-section' id='main-section'>";
 //creating sql variables and populating those with  sql statements to retrieve necessary data from the relevant db tables
-  $sql_produce = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_produce_department";
-  $sql_meat = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_meat_department";
-  $sql_seafood = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_seafood_department";
-  $sql_prepared = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_prepared_department";
-  $sql_wine_beer = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_wine_beer_department";
-  $sql_health_beauty = "select `id`, `type`, `name`, size, price, path, desc, measurement from the_health_beauty_department";
+  $sql_produce = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_produce_department;";
+  $sql_meat = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_meat_department";
+  $sql_seafood = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_seafood_department";
+  $sql_prepared = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_prepared_department";
+  $sql_wine_beer = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_wine_beer_department";
+  $sql_health_beauty = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_health_beauty_department";
 
   //executing those created sql statements and checking the db connection,if it's not connected succesfully it'll show an error message
   $exeSQL_produce = mysqli_query($connection, $sql_produce) or die(mysqli_error($connection));
