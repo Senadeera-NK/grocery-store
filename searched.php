@@ -36,6 +36,8 @@ include("header.php");
   $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
   $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
 
+  $sql_all_item_names = "select `name` from ".$user_option;
+
   $exeSQL_option;
   if ($user_option == 'All'){
     $exeSQL_option = "";
@@ -113,29 +115,6 @@ include("header.php");
   echo    "</div>";
   echo  "</div>";
   echo "</div>";
- 
-
-  if ($user_option == 'All'){
-    echo "All";
-  }
-  else if($user_option == "The Beer & Wine Department"){
-    echo "Beer";
-  }
-  else if($user_option == "The Produce Department"){
-    echo "Produce";
-  }
-  else if($user_option == "The Meat Department"){
-    echo "Meat";
-  } 
-  else if($user_option == "The Seafood Department"){
-
-  } 
-  else if($user_option == "The Health & Beauty Department"){
-
-  }
-  else if($user_option == "The Prepared Food Department"){
-
-  }
 
   echo $search_item;
 ?>
