@@ -28,50 +28,50 @@ include("header.php");
   $sql_wine_beer = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_wine_beer_department";
   $sql_health_beauty = "select `id`, `type`, `name`, `size`, `price`, `path`, `desc`, `measurement` from the_health_beauty_department";
 
-  //executing those created sql statements and checking the db connection,if it's not connected succesfully it'll show an error message
+  // executing those created sql statements and checking the db connection,if it's not connected succesfully it'll show an error message
   $exeSQL_produce = mysqli_query($connection, $sql_produce) or die(mysqli_error($connection));
-  $exeSQL_meat = mysqli_query($connection, $sql_meat) or die(mysqli_error($connection));
-  $exeSQL_seafood = mysqli_query($connection, $sql_seafood) or die(mysqli_error($connection));
-  $exeSQL_prepared = mysqli_query($connection, $sql_prepared) or die(mysqli_error($connection));
-  $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
-  $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
+  // $exeSQL_meat = mysqli_query($connection, $sql_meat) or die(mysqli_error($connection));
+  // $exeSQL_seafood = mysqli_query($connection, $sql_seafood) or die(mysqli_error($connection));
+  // $exeSQL_prepared = mysqli_query($connection, $sql_prepared) or die(mysqli_error($connection));
+  // $exeSQL_wine_beer = mysqli_query($connection, $sql_wine_beer) or die(mysqli_error($connection));
+  // $exeSQL_health_beauty = mysqli_query($connection, $sql_health_beauty) or die(mysqli_error($connection));
 
-  $sql_item_names = "select `name` from ".$user_option;
-  $sql_all_item_names = "select `name` from the_health_beauty_department union select `name` from the_meat_department union select `name` from the_prepared_department union select `name` from the_produce_department union select `name` from the_seafood_department union select `name` from the_wine_beer_department";
+  // $sql_item_names = "select `name` from ".$user_option;
+  // $sql_all_item_names = "select `name` from the_health_beauty_department union select `name` from the_meat_department union select `name` from the_prepared_department union select `name` from the_produce_department union select `name` from the_seafood_department union select `name` from the_wine_beer_department";
 
-  $exeSQL_item_names = mysqli_query($connection, $sql_item_names) or die(mysqli_error($connection));
-  $exeSQL_all_item_names = mysqli_query($connection, $sql_all_item_names) or die(mysqli_error($connection));
+  // $exeSQL_item_names = mysqli_query($connection, $sql_item_names) or die(mysqli_error($connection));
+  // $exeSQL_all_item_names = mysqli_query($connection, $sql_all_item_names) or die(mysqli_error($connection));
 
-  $exeSQL_search;
-  $exeSQL_option;
-  if ($user_option == 'All'){
-    $exeSQL_option = "";
-    $exeSQL_search = $sql_all_item_names;
-  }
-  else if($user_option == "The Beer & Wine Department"){
-    $exeSQL_option = $exeSQL_wine_beer;
-    $exeSQL_search = $sql_item_names;
-  }
-  else if($user_option == "The Produce Department"){
-    $exeSQL_option = $exeSQL_produce;
-    $exeSQL_search = $sql_item_names;
-  }
-  else if($user_option == "The Meat Department"){
-    $exeSQL_option = $exeSQL_meat;
-    $exeSQL_search = $sql_item_names;
-  } 
-  else if($user_option == "The Seafood Department"){
-    $exeSQL_option = $exeSQL_seafood;
-    $exeSQL_search = $sql_item_names;
-  } 
-  else if($user_option == "The Health & Beauty Department"){
-    $exeSQL_option = $exeSQL_health_beauty;
-    $exeSQL_search = $sql_item_names;
-  }
-  else if($user_option == "The Prepared Food Department"){
-    $exeSQL_option = $exeSQL_prepared;
-    $exeSQL_search = $sql_item_names;
-  }
+  // $exeSQL_search;
+  // $exeSQL_option;
+  // if ($user_option == 'All'){
+  //   $exeSQL_option = "";
+  //   $exeSQL_search = $sql_all_item_names;
+  // }
+  // else if($user_option == "The Beer & Wine Department"){
+  //   $exeSQL_option = $exeSQL_wine_beer;
+  //   $exeSQL_search = $sql_item_names;
+  // }
+  // else if($user_option == "The Produce Department"){
+  //   $exeSQL_option = $exeSQL_produce;
+  //   $exeSQL_search = $sql_item_names;
+  // }
+  // else if($user_option == "The Meat Department"){
+  //   $exeSQL_option = $exeSQL_meat;
+  //   $exeSQL_search = $sql_item_names;
+  // } 
+  // else if($user_option == "The Seafood Department"){
+  //   $exeSQL_option = $exeSQL_seafood;
+  //   $exeSQL_search = $sql_item_names;
+  // } 
+  // else if($user_option == "The Health & Beauty Department"){
+  //   $exeSQL_option = $exeSQL_health_beauty;
+  //   $exeSQL_search = $sql_item_names;
+  // }
+  // else if($user_option == "The Prepared Food Department"){
+  //   $exeSQL_option = $exeSQL_prepared;
+  //   $exeSQL_search = $sql_item_names;
+  // }
 
 
   // while($array_search = mysqli_fetch_array($exeSQL_search))
