@@ -72,6 +72,14 @@ include("header.php");
     $exeSQL_option = $exeSQL_prepared;
     $exeSQL_search = $sql_item_names;
   }
+  while($array_search = mysqli_fetch_array($exeSQL_search))
+  {
+    $search_name = $array_search['name'];
+    if ($search_item == $search_name)
+    {
+      echo "wwww";
+    }
+  }
 
     // ---------- 6th slider begins-----------//
     echo "<h3 class='home-topics'>".$user_option."</h3>";
@@ -128,8 +136,7 @@ include("header.php");
   echo  "</div>";
   echo "</div>";
 
-  echo $search_item;
-?>
+ ?>
 
 <?php 
 // ****------ POST method of 'user shopping cart' should be included ----------//
