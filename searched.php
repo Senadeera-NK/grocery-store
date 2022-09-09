@@ -39,8 +39,8 @@ include("header.php");
   $sql_item_names = "select `name` from ".$user_option;
   $sql_all_item_names = "select `name` from the_health_beauty_department union select `name` from the_meat_department union select `name` from the_prepared_department union select `name` from the_produce_department union select `name` from the_seafood_department union select `name` from the_wine_beer_department";
 
-  // $exeSQL_item_names = mysqli_query($connection, $sql_item_names) or die(mysqli_error($connection));
-  // $exeSQL_all_item_names = mysqli_query($connection, $sql_all_item_names) or die(mysqli_error($connection));
+  $exeSQL_item_names = mysqli_query($connection, $sql_item_names) or die(mysqli_error($connection));
+  $exeSQL_all_item_names = mysqli_query($connection, $sql_all_item_names) or die(mysqli_error($connection));
 
   // $exeSQL_search;
   // $exeSQL_option;
