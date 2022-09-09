@@ -43,34 +43,34 @@ include("header.php");
   $exeSQL_all_item_names = mysqli_query($connection, $sql_all_item_names) or die(mysqli_error($connection));
 
   $exeSQL_search;
-  if ($search_item == "All"){
-    $exeSQL_search = $exeSQL_all_item_names;
-  }
-  else{
-
-  }
-
   $exeSQL_option;
   if ($user_option == 'All'){
     $exeSQL_option = "";
+    $exeSQL_search = $sql_all_item_names;
   }
   else if($user_option == "The Beer & Wine Department"){
     $exeSQL_option = $exeSQL_wine_beer;
+    $exeSQL_search = $sql_item_names;
   }
   else if($user_option == "The Produce Department"){
     $exeSQL_option = $exeSQL_produce;
+    $exeSQL_search = $sql_item_names;
   }
   else if($user_option == "The Meat Department"){
     $exeSQL_option = $exeSQL_meat;
+    $exeSQL_search = $sql_item_names;
   } 
   else if($user_option == "The Seafood Department"){
     $exeSQL_option = $exeSQL_seafood;
+    $exeSQL_search = $sql_item_names;
   } 
   else if($user_option == "The Health & Beauty Department"){
     $exeSQL_option = $exeSQL_health_beauty;
+    $exeSQL_search = $sql_item_names;
   }
   else if($user_option == "The Prepared Food Department"){
     $exeSQL_option = $exeSQL_prepared;
+    $exeSQL_search = $sql_item_names;
   }
 
     // ---------- 6th slider begins-----------//
