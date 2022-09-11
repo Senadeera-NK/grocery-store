@@ -93,8 +93,11 @@ include("header.php");
     $array_name = $array_search['name'];
     $search_names_array[]=strtolower($array_name);
   }
-  foreach($search_names_array as $valuee){
-    echo $valuee. "<br>";
+  if(in_array(strtolower($search_item), $search_names_array)){
+
+  }
+  else{
+    
   }
 
     // ---------- 6th slider begins-----------//
