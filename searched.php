@@ -87,13 +87,14 @@ include("header.php");
   }
 
 
+  $search_names_array = array();
   while($array_search = mysqli_fetch_array($exeSQL_search))
   {
-    $search_name = $array_search['name'];
-    if ($search_item == $search_name)
-    {
-      echo "wwww";
-    }
+    $array_name = $array_search['name'];
+    $search_names_array[]=$array_name;
+  }
+  foreach($array_search as $valuee){
+    echo $valuee. "<br>";
   }
 
     // ---------- 6th slider begins-----------//
