@@ -94,10 +94,10 @@ include("header.php");
     $search_names_array[]=strtolower($array_name);
   }
   if(in_array(strtolower($search_item), $search_names_array)){
-
+    echo "its in the array";
   }
   else{
-    
+    echo "its not in the array";
   }
 
     // ---------- 6th slider begins-----------//
