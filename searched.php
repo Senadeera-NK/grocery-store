@@ -93,7 +93,7 @@ include("header.php");
     $array_name = $array_search['name'];
     $search_names_array[]=$array_name;
   }
-  foreach($array_search as $valuee){
+  foreach($search_names_array as $valuee){
     echo $valuee. "<br>";
   }
 
