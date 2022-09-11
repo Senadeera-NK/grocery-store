@@ -93,12 +93,10 @@ include("header.php");
     $array_name = $array_search['name'];
     $search_names_array[]=strtolower($array_name);
   }
+
+  // ------ checking if the searched item is in the selected array -------- //
+
   if(in_array(strtolower($search_item), $search_names_array)){
-    echo "its in the array";
-  }
-  else{
-    echo "its not in the array";
-  }
 
     // ---------- 6th slider begins-----------//
     echo "<h3 class='home-topics'>".$user_option."</h3>";
@@ -133,7 +131,12 @@ include("header.php");
     echo "</div>";
     // ---------- 6th slider ends-----------//
     echo "</section>";
-  
+  }
+    else{
+      echo "its not in the array";
+    }
+
+
     //------The Modal for item-----------// 
   echo "<div id='modal' class='modal'>";
     //Modal content 
