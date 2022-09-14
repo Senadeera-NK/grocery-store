@@ -101,8 +101,8 @@ include("header.php");
     // ---------- 6th slider begins-----------//
     echo "<h3 class='home-topics'>".$user_option."</h3>";
     echo "<div class = 'gallery-wrapper'>";
-    echo "<img src='images/arrow.jpg' class='left' id='left6' alt='left'>";
-    echo "<div class='gallery' id='gallery6'>";
+    echo "<img src='images/arrow.jpg' class='left' id='left7' alt='left'>";
+    echo "<div class='gallery' id='gallery7'>";
 
     // getting all the items from mentioned sql
   
@@ -127,7 +127,7 @@ include("header.php");
     }
     echo "</div>";
     // right side arrow of the slider
-    echo "<img src='images/arrow.jpg' class='right' id ='right6' alt='right'>";
+    echo "<img src='images/arrow.jpg' class='right' id ='right7' alt='right'>";
     echo "</div>";
     // ---------- 6th slider ends-----------//
     echo "</section>";

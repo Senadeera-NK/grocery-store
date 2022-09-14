@@ -92,6 +92,21 @@ leftbtn6.onclick = function () {
   sideScroll(container, 'left', 25, 200, 10);
 };
 
+//getting the right button's ID to a variable in sixth gallery
+var rightbtn7 = document.getElementById('right7');
+rightbtn7.onclick = function () {
+  var container = document.getElementById('gallery7');
+  //adding the function to the button
+  sideScroll(container, 'right', 25, 200, 10);
+};
+//getting the left button's ID to a variable in sixth gallery
+var leftbtn7 = document.getElementById('left7');
+leftbtn7.onclick = function () {
+  var container = document.getElementById('gallery7');
+  //adding the function to the button
+  sideScroll(container, 'left', 25, 200, 10);
+};
+
 //the main function to slide the gallery to left or right
 function sideScroll(element, direction, speed, distance, step){
   scrollAmount = 0;
