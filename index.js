@@ -126,7 +126,7 @@ function sideScroll(element, direction, speed, distance, step){
 
 // ------------------- js file for the modal in index.php ------------- // 
 // Get the modal
-var modal = document.getElementById('modal');
+var modal = document.getElementById("modal");
 console.log(modal.value)
 
 // Get the <span> element that closes the modal
