@@ -137,26 +137,26 @@ include("header.php");
     }
 
 
-    //------The Modal for item-----------// 
-  echo "<div id='modal' class='modal'>";
-    //Modal content 
-  echo "<div class='modal-content'>";
-  echo    "<span class='close'>&times;</span>";
-  echo    "<div class='modal-content-left' id = 'modal-content-left'>";
-  echo      "<img id='modal-img' src = ''>";
-  echo    "</div>";
-  echo    "<div class='modal-content-right' id = 'modal-content-right'>";
-  echo    "<h2 id = 'modal-item-name'></h2>";
-  echo      "<div class = 'modal-description' id = 'modal-description'>";
-  echo      "</div>";
-  echo      "<div class= 'modal-amount-price' id='modal-amount-price'> </div>";
-  echo      "<div class='modal-amount-measurement'>";
-  echo        "<p> Amount <input type='number' id='modal-amount' name='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
-  echo      "</div>";
-  echo      "<button id='add-cart-btn' class='add-cart-btn' name='add-cart-btn' onclick='onclick_add_to_cart(this)'>Add Cart</button>";
-  echo    "</div>";
-  echo  "</div>";
-  echo "</div>";
+  //   //------The Modal for item-----------// 
+  // echo "<div id='modal' class='modal'>";
+  //   //Modal content 
+  // echo "<div class='modal-content'>";
+  // echo    "<span class='close'>&times;</span>";
+  // echo    "<div class='modal-content-left' id = 'modal-content-left'>";
+  // echo      "<img id='modal-img' src = ''>";
+  // echo    "</div>";
+  // echo    "<div class='modal-content-right' id = 'modal-content-right'>";
+  // echo    "<h2 id = 'modal-item-name'></h2>";
+  // echo      "<div class = 'modal-description' id = 'modal-description'>";
+  // echo      "</div>";
+  // echo      "<div class= 'modal-amount-price' id='modal-amount-price'> </div>";
+  // echo      "<div class='modal-amount-measurement'>";
+  // echo        "<p> Amount <input type='number' id='modal-amount' name='modal-amount' class='modal-amount'/> <span id = 'modal-measurement-type'></span> </p>";
+  // echo      "</div>";
+  // echo      "<button id='add-cart-btn' class='add-cart-btn' name='add-cart-btn' onclick='onclick_add_to_cart(this)'>Add Cart</button>";
+  // echo    "</div>";
+  // echo  "</div>";
+  // echo "</div>";
 
  ?>
 
