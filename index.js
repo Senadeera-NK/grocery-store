@@ -136,6 +136,8 @@ var span = document.getElementsByClassName("close")[0];
 //function to getting the element which is clicked by the user
 function onClick(element, src, name, desc, size, price, measurement) {
   //when user clicked making the modal visible
+  // Get the modal
+  var modal = document.getElementById('modal');
   modal.style.display = "block";
 
   //filling all the infos of the item in the modal//
