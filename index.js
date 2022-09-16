@@ -125,19 +125,12 @@ function sideScroll(element, direction, speed, distance, step){
 }
 
 // ------------------- js file for the modal in index.php ------------- // 
-// Get the modal
-var modal = document.getElementsById('modal');
-console.log(modal.value)
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var modal = document.getElementById('modal');
 
 //function to getting the element which is clicked by the user
 function onClick(element, src, name, desc, size, price, measurement) {
   //when user clicked making the modal visible
   // Get the modal
-  var modal = document.getElementById('modal');
   modal.style.display = "block";
 
   //filling all the infos of the item in the modal//
@@ -149,6 +142,8 @@ function onClick(element, src, name, desc, size, price, measurement) {
 }
 
 // When the user clicks on <span> (x), close the modal
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
 span.onclick = function() {
    //clearing the modal-amount's textfield after closing
   document.getElementById('modal-amount').value = "";
